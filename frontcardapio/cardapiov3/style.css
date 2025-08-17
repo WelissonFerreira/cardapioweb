@@ -1,0 +1,1758 @@
+@charset "UTF-8";
+/* Mobile First */
+
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    background-color: white;
+    font-size: 10px;
+    
+}
+
+/* Main container */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+    background-color: #252525;
+    
+}
+
+#principal {
+    background-image: url(imagens/backteste1.jpg);
+    
+    /* background-color: #E8931F;*/
+    
+}
+
+span {
+    font-size: 0.9rem;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Cabeçalho */
+
+#topomenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* evita vazamento da imagem */
+}
+
+
+
+.bannermenu {
+    background-image: url(fachada3.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+}
+
+.controleCabecalho {
+    width: 100%;
+    border-top-left-radius: 20px;  /* canto superior esquerdo */
+    border-top-right-radius: 20px; /* canto superior direito */
+    border-bottom-left-radius: 0;  /* canto inferior esquerdo */
+    border-bottom-right-radius: 0; /* canto inferior direito */ 
+    background-color: #E8931F;
+    position: relative;
+    margin-top: -30px;
+    z-index: 2;
+}
+
+.logomenu {
+    width: 70px;
+    height: 70px;
+    border: 5px solid white;
+    border-radius: 50px;
+    margin-top: 5px;
+    position: absolute;
+    /*left: 42%;*/
+}
+
+.divlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+#open-close {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E8931F;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.msgfuncionamento {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    color: rgb(158, 26, 24);
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+
+
+.msghorariofuncionamento {
+    color: black;
+    padding: 2px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+
+.divFuncionamento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.msgverhorarios {
+    color: black;
+    padding: 2px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
+
+.btn-fechado-horarios {
+    color: white;
+    background-color: rgb(158, 26, 24);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* =================================== */
+
+/* MENU TOPO */
+
+#menu-opcoes {
+    display: flex;
+    align-items: flex-start;
+}
+
+#menu-categorias {
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #E8931F;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    /*margin-top: 5px;*/
+    margin-top: 2%;
+    /*margin-left: 8px;*/
+    margin-left: 5vw;
+    text-align: center;
+}
+
+option {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+
+}
+
+
+
+#titulo-passaporte, #titulo-sanduiches, #titulo-especiais, #titulo-bebidas {
+    display: inline-block;
+    background-color: #E8931F; /* Cor de fundo para CADA item */
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 5px; /* Borda arredondada para CADA item */
+    padding: 5px 10px; /* Preenchimento interno para CADA item (texto ao redor) */
+    margin-top: 20px;
+    margin-left: 5%;
+    /*margin-left: 15px;*/
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    
+}
+
+
+
+/* =========================== */
+
+/* TITULO PRINCIPAL */
+
+/* Parágrafo do menu */
+.pmenu {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+
+
+/* CONTEUDO PRINCIPAL - CARDS, IMG, DESCRIÇÕES, PREÇO */
+.item-pai {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px 0;
+    width: 90vw;
+    margin: auto;
+    /*border: 1px solid gray;*/
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px gray;
+}
+
+
+.card-pai {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 7px;
+    width: 100%;
+}
+
+
+
+
+.card-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+    width: 100%;
+
+}
+
+
+
+.card-pai li {
+    list-style-type: none;
+    padding: 2px;
+    font-size: 0.8rem;
+}
+
+/* CONTROLE DE IMAGENS, SANDUICHES, BEBIDAS, AÇAI... */
+
+
+.fotosanduba {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.fotosanduba-especial {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    flex: 0 0 100px;
+    overflow: hidden;
+}
+
+.fotobebidas {
+    width: auto;
+    max-width: none;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    
+}
+
+.card-image-bebidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    flex: 0 0 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* BOTÕES DO PRODUTO, DIV PRINCIPAL, CONTROLE DOS BOTÕES */
+#botoes-produto {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.AdicionarCarrinho {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 15px;
+    background-color: #E8931F;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+.msgAdicionado {
+    position: absolute;
+    bottom: 110%;
+    left: 20%;
+    transform: translateX(-50%); /* Ajusta para centralizar de fato */
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave */
+    pointer-events: none; /* Garante que a mensagem não interfere com cliques */
+    z-index: 1000; /* Garante que a mensagem fique acima de outros elementos */
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.7rem;
+    color: black; /* Escolha uma cor para a mensagem */
+    /* Outros estilos, como background, padding, etc. */
+}
+
+.close-button-carrinho {
+    /*position: absolute;*/
+    font-size: 2rem;
+    font-weight: bold;
+    /*top: 0%;
+    right: 5%; */
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+/* CONTROLE DE TEXTOS, SUBTITULOS, PREÇOS E DESCRIÇÕES */
+.titulo-produtos {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    
+    color: black;
+    /*margin-left: -65px*/
+
+}
+
+
+.descricao-produtos {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 3px;
+    color: black;
+    margin-right: 3px;
+    
+}
+
+.descricao-ingredientes {
+    color: black;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    
+}
+
+
+
+
+.preco-riscado {
+    font-weight: bolder;
+    color: rgb(85, 83, 83);
+    text-decoration: line-through;
+}
+
+.spanmenu {
+    color: black;
+    font-size: 0.8rem;
+}
+
+/* Cor de texto padrão para h4, p, span */
+
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* CONTROLE DO MENU INFERIOR */
+
+footer {
+  position: fixed; /* Isso tira o elemento do fluxo normal e o posiciona em relação à viewport */
+  bottom: 0; /* Garante que ele fique fixo na parte inferior da tela */
+  width: 100%;  /* Faz com que ele ocupe toda a largura da tela */
+  background-Color: #E8931F; /* Mantenha a cor de fundo, ou defina uma se ainda não tiver */
+  padding: 10px 0; /* Ajuste o padding conforme necessário para dar espaço interno */
+  z-index: 1000; /* Garante que o footer fique acima de outros elementos na página */
+
+
+}
+
+/* MENU INFERIOR */
+
+.navbarinferior {
+    background-Color: #E8931F;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.navbarinferior li a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    gap: 5px;
+    font-size: 1.3rem;
+    color: black;
+    /*transition: transform 0.8s ease-out;*/
+}
+
+/* CONTROLAR CONTADOR DO CARRINHO */
+
+.carrinho-item {
+    position: relative; /* Define este elemento como referência para posicionamento absoluto dos filhos */
+}
+
+.contcarrinho {
+    position: absolute; /*Permite posicionar o contador em relação ao .carrinho-item   */
+    top: -5px; /* Move o contador um pouco para cima do ícone */
+    right: 5px;  /* Move o contador para a direita, colando no canto do ícone */
+    background-color: red;  /* Cor de fundo da bolinha do contador */
+    color: white; /* Cor do texto (número) do contador */
+    font-size: 0.7rem; /* Tamanho da fonte dentro da bolinha */
+    width: 16px; /* Largura da bolinha */
+    height: 16px; /* Altura da bolinha */
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o número */
+    align-items: center; /* Centraliza verticalmente o número */
+    border-radius: 50%; /* Transforma o quadrado em um círculo (bolinha) */
+    font-weight: bold;  /* Deixa o número em negrito */
+    z-index: 10;  /* Garante que a bolinha fique na frente de outros elementos se houver sobreposição */
+}
+
+#mensagem-carrinho-vazio {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #303030;
+    color: white;
+    padding: 8px 15px; /* Reduzi um pouco o padding para diminuir o tamanho geral */
+    margin-top: -25px;
+    z-index: 1000;
+    font-weight: bold;
+    text-align: center;
+    width: auto; /* Permite que a largura se ajuste ao conteúdo, até o max-width */
+    height: auto; /* Garante que a altura se ajuste, quebrando linhas se necessário */
+    white-space: nowrap; /* Permite que o texto quebre linhas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 0.6em; /* Opcional: Reduz o tamanho da fonte um pouco para economizar espaço */
+}
+
+
+
+
+
+/* =================================== */
+
+/* MODAL E CONTROLE DO MODAL */
+
+
+
+.modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed; /* Fixa o modal na tela */
+    z-index: 1000; /* Garante que o modal fique acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: #E8931F;
+}
+
+#ModalQRCode {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#card-imagem-qrcode {
+    display: flex;
+    position: relative;
+    width: 95%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.fotoQRCODE {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    
+    
+}
+
+.txtQRCODE {
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    font-family: "Quicksand", sans-serif;;
+}
+
+.close-button-qrcode {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background-color: none;
+    margin-top: 5px;
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    margin: 15% auto; /* Centraliza o modal na tela */
+    padding: 20px;
+    width: 80%; /* Largura do modal */
+    max-width: 500px; /* Largura máxima do modal */
+    border: 1px solid #888;
+    border-radius: 10px; /* Bordas arredondadas */
+    position: relative; /* Para posicionar o botão de fechar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-content li {
+    list-style-type: square;
+}
+
+/* BOTÃO USADO PARA ABRIR O MODAL */
+
+.botaomodal {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    color: #E8931F;
+    text-decoration: underline;
+}
+
+.descricao-produtos-modal {
+    padding-bottom: 3px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: black;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+#botoes-produto-modal {
+    display: flex;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotolanchemodal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.close-button-vermais {
+    text-align: right;
+    font-size: 2rem;
+}
+
+
+
+/* MODAL HORÁRIOS */
+#modalhorarios {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 60%;
+    margin-top: 100px;
+    display: none;
+
+}
+
+.contmodalhorarios {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    position: relative;
+    
+    
+
+}
+
+    .h3modal {
+        text-align: center;
+        padding: 5px;
+        color: black;
+    
+    }
+    .pmodalhorario {
+        padding: 5px;
+        font-size: 0.8rem;
+        
+        
+    }
+
+    .modal-sub-titulos {
+        text-align: center;
+        display: block;
+        padding: 10px;
+        font-family: Lato, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+
+        
+    }
+    .modal-dia {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4px;
+        align-items: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+    
+    }
+
+    .formapagamento-modal {
+        padding: 2px;
+        font-size: 0.8rem;
+    }
+
+    .btn-fechado-horarios {
+        cursor: pointer;
+        margin-right: 3px;
+        
+    }
+
+    .botao-horarios-P2 {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .close-button-horarios {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+/*=================================================== */
+
+/*  MODAL DO CARRINHO: */
+.modal-content-carrinho {
+    background-color: #E8931F;
+    margin: 15% auto; /* Centraliza o modal na tela */
+    padding: 20px;
+    max-width: 500px; /* Largura máxima do modal */
+    /*border: 1px solid #888;*/
+    /*border-radius: 10px; /* Bordas arredondadas */
+    position: relative; /* Para posicionar o botão de fechar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    width: 100vw;
+    
+    
+
+}
+
+
+
+#ModalCarrinho {
+    background-Color: #E8931F;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.divh3Carrinho {
+    display: flex;
+}
+
+.h3Carrinho {
+    margin: auto;
+    margin-bottom: 15px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+
+
+.item-do-carrinho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 8px 1px gray;
+    padding: 10px;
+    margin: 10px auto;
+    background-Color: white;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    
+}
+
+.divImagem {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    
+}
+
+.divInfoProdutos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    
+
+}
+
+.divProdutoDescricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    
+}
+
+
+
+
+
+.imagemProduto {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.controles-quantidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+
+#finalizar-compra {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#finalizar-compra:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.precoCarrinhoTotal {
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 15px;
+}
+
+/* Botões do Carrinho */
+
+
+.precoCarrinho {
+    /*text-align: left;*/
+    color: black;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.descricaoProduto {
+    color: black;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.ingredientesProdutos {
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+}
+
+.precoCarrinhoTotal {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.inputObs {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 10px;
+}
+
+.labelObs {
+    color: black;
+    display: inline-block;
+    padding-bottom: 7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+    
+}
+
+
+
+.divControleBotoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    align-self: center;
+    width: 40%;
+}
+
+
+.btnDiminuir, .btnAumentar, .btnRemover {
+    color: black;
+    background-Color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    height: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 30px;
+    display: flex; /* Para centralizar o + e - */
+    justify-content: center;
+    align-items: center;
+    /*padding-top: 1px;*/
+
+}
+
+
+
+
+
+.btnRemover {
+
+    background-color: white;
+    color: black;
+}
+
+.btnAumentar:hover,
+.btnDiminuir:hover {
+    transition: background-color 1s ease-in-out;
+    
+}
+
+.btnAumentar:hover,
+.btnDiminuir:hover {
+    background-color: #edbb5a; /* Efeito de hover */
+    color: black;
+    
+}
+
+.quantidade-item {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.nomeProduto {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    color: black;
+    margin: auto;
+}
+
+#sugestaoBebidas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.titulo-bebida-sugestao {
+    text-align: center;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.grupo-bebida {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    
+}
+
+.opcao-bebida {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 5px;
+    border: 1px solid #E8931F;
+}
+
+.imgsugestao {
+    width: 80px;
+    height: 80px;
+    
+}
+
+.imgsugestao-cocacola250 {
+    width: 100px;
+    height: 80px;
+    margin-left: -2%;
+}
+
+.imgsugestao-guarana250 {
+    width: 80px;
+    height: 80px;
+    margin-left: -0%;
+}
+
+.imgsugestao-fanta250 {
+    width: 90px;
+    height: 80px;
+    margin-left: -3%;
+}
+
+.imgsugestao-soda250 {
+    width: 70px;
+    height: 80px;
+    margin-left: -0%;
+}
+
+.imgsugestao-coca1L {
+    width: 130px;
+    height: 100px;
+    margin-left: -8%;
+}
+.imgsugestao-guarana1L {
+    width: 60px;
+    height: 100px;
+    margin-left: -0%;
+}
+
+.imgsugestao-fanta1L {
+    width: 130px;
+    height: 120px;
+    margin-left: -8%;
+}
+
+.imgsugestao-soda1L {
+    width: 120px;
+    height:100px;
+    margin-left: -8%;
+}
+
+.imgsugestao-coca2L {
+    width: 130px;
+    height: 140px;
+    margin-left: -8%;
+}
+
+.imgsugestao-guarana2L {
+    width: 130px;
+    height: 140px;
+    margin-left: -10%;
+}
+
+.imgsugestao-fanta2L {
+    width: 130px;
+    height: 140px;
+    margin-left: -7%;
+}
+
+.imgsugestao-soda2L {
+    width: 80px;
+    height: 120px;
+    margin-left: -5%;
+}
+
+.psugestao, .spansugestao {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.adicionar-bebida {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 0.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #E8931F;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.controle-botoes-sugestao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+/* MODAL DADOS */
+
+/* MODAL DADOS - O overlay que cobre a tela toda */
+#ModalDados {
+    display: none; /* Mantém 'none' para que ele não apareça por padrão */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite rolagem se o formulário for muito longo */
+    background-color: transparent; /* Torne o fundo do overlay transparente */
+
+    /* Não precisamos de justify-content/align-items aqui se o ConteudoModalDados vai preencher tudo */
+}
+
+/* Conteúdo do Modal de Dados - Onde está o formulário */
+.ConteudoModalDados {
+    background-color: #E8931F; /* O fundo que você quer para o formulário */
+    color: black;
+    margin: 0;           /* Sem margens externas, preenche o pai */
+    padding: 20px;       /* Padding interno para o conteúdo do formulário */
+    width: 100%;         /* Ocupa 100% da largura do #ModalDados */
+    height: 100%;        /* Ocupa 100% da altura do #ModalDados */
+    max-width: none;     /* Crucial para não limitar a largura em mobile */
+    border: none;        /* Remove a borda se quiser um visual limpo */
+    border-radius: 0;    /* Remove o arredondamento */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo interno em coluna */
+    justify-content: start; /* Alinha o conteúdo ao topo */
+    align-items: center;    /* Centraliza itens horizontalmente */
+    font-size: 1rem;
+    box-sizing: border-box; /* Garante que padding e border não causem overflow */
+}
+
+
+
+.mensagem-erro {
+    color: red;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.mensagem-erro-rua {
+    color: red;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    text-align: start;
+    
+}
+
+#formularioDados {
+    display: flex;
+    flex-direction: column; /* Para organizar os campos em coluna */
+    width: 100%; /* Ocupa 100% da largura do ConteudoModalDados */
+    flex-grow: 1; /* Permite que o formulário ocupe a altura restante dentro do ConteudoModalDados */
+    padding: 0; /* Remova qualquer padding que possa existir aqui por padrão */
+    margin: 0;  /* Remova qualquer margem que possa existir aqui por padrão */
+    overflow-y: auto; /* Se o formulário for muito longo, ele rola internamente */
+    box-sizing: border-box;
+    background-color: #E8931F;
+}
+
+
+
+
+
+#nomeUsuario, #cellUsuario, #Bairro, #Rua, #NumeroCasa, #complemento {
+    width: 100%; /* Inputs devem preencher a largura de sua div pai */
+    height: 50px;
+    box-sizing: border-box; /* Essencial para inputs com padding/border */
+    padding: 8px; /* Adicione um padding para que o texto não cole nas bordas do input */
+    margin-bottom: 10px; /* Espaço entre os inputs */
+    font-size: 1.2rem; /* Garante um tamanho de fonte legível */
+}
+
+.labelform {
+    font-size: 1.4rem;
+}
+
+
+
+#divBotoesDados {
+    display: flex;
+    flex-direction: row; /* Garante que os botões fiquem lado a lado */
+    justify-content: center; /* Centraliza os botões */
+    padding-top: 15px;
+    gap: 15px;
+}
+
+
+#AvancarPedido, #VoltarPedido {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+#AvancarPedido.clicado {
+    background-color: black;
+    color: white;
+}
+
+#VoltarPedido.clicado {
+    background-color: black;
+    color: white;
+}
+
+
+/* MODAL FINALIZAR PEDIDO */
+
+#ModalFazerPedido {
+    background-color: #E8931F;
+    display: none;
+    z-index: 1001;
+    /*border: solid 1px;*/
+}
+
+.ContModalFazerPedido {
+    background-color: #E8931F;
+    color: black;
+    margin: auto; 
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    /*border: 1px solid #888;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+#Finalizar-Pedido {
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#Finalizar-Pedido {
+    padding: 7px 10px;
+}
+
+#voltarPedido {
+    background-color: #E8931F;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1px 10px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    border-radius: 15px;
+}
+
+.seuPedidoNome {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#Pedido {
+    margin-top: 25px;
+    /*border: 1px solid gray;*/
+    padding: 10px;
+    height: 100%;
+    background-color: #E8931F;
+    
+}
+
+#inputTroco {
+    margin-top: 5px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+}
+
+#itensListadosNoPedido {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.divControleItemIndividual {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.addIngredientes {
+    margin: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.appPedido {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: bolder;
+    margin: 15px;
+}
+
+.pagamentoPIX, .pagamentoCartao, .pagamentoDinheiro {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.formas-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+#ValorTotalPedidoFinal {
+    text-align: center;
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.precoFazerPedido {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: bolder;
+}
+
+#divBotoesPedido {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.imagemPedidoFinal {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* FORMULÁRIO */
+
+.CformEntrega {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+#formEntrega {
+    display: none;
+    
+}
+
+.CRetirada, .CEntrega {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.opcao-pedido {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+.opcao-dados {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.opcao-dados,
+.opcao-pedido,
+#formEntrega {
+    width: 100%; /* Faz essas divs preencherem a largura do formulário */
+    box-sizing: border-box;
+    /* Adicione padding se necessário para espaçamento interno de cada seção */
+    padding-inline: 5px; /* Exemplo: um pequeno padding nas laterais das seções */
+    
+}
+
+.opcao-pedido label {
+    flex: 0 0;
+    font-size: 1.6rem;
+    
+}
+
+
+
+
+/* Ajuste para os labels e inputs dentro dessas divs */
+.opcao-dados label,
+.opcao-pedido label {
+    width: 100%; /* Garante que o label ocupe a largura completa */
+    margin-top: 10px; /* Adiciona um espaço acima dos labels */
+    
+}
+
+.close-button-dados {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.close-button-pedido {
+    position: absolute;
+    font-size: 0.5rem;
+    font-weight: bolder;
+    top: 0px;
+    right: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    border: none;
+    
+}
+
+#nome, #cell, #Bairro, #Rua, #Numero, #complemento {
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+
+
+ /* ======================================= */
+
+ /* ======================================= */
+/* Responsividade para telas pequenas */
+@media screen and (min-width: 300px) and (max-width: 400px) {
+
+    footer {
+  position: fixed; /* Isso tira o elemento do fluxo normal e o posiciona em relação à viewport */
+  bottom: 0; /* Garante que ele fique fixo na parte inferior da tela */
+  width: 100%;  /* Faz com que ele ocupe toda a largura da tela */
+  background-Color: #E8931F; /* Mantenha a cor de fundo, ou defina uma se ainda não tiver */
+  padding: 10px 0; /* Ajuste o padding conforme necessário para dar espaço interno */
+  z-index: 1000; /* Garante que o footer fique acima de outros elementos na página */
+
+
+}
+
+
+
+
+.msgAdicionado {
+    position: absolute;
+    bottom: 120%;
+    left: 25%;
+    transform: translateX(-50%); /* Ajusta para centralizar de fato */
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave */
+    pointer-events: none; /* Garante que a mensagem não interfere com cliques */
+    z-index: 1000; /* Garante que a mensagem fique acima de outros elementos */
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.6rem;
+    color: black; /* Escolha uma cor para a mensagem */
+    /* Outros estilos, como background, padding, etc. */
+
+    }
+
+    #menu-opcoes {
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        padding: 8px;
+    }
+
+    .item-pai {
+        width: 97%;
+    
+    
+    }
+
+
+
+/* Botão Remover */
+
+.btnRemover {
+    width: 10px;
+}
+
+
+    .btnDiminuir, .btnAumentar, .btnRemover {
+    color: black;
+    background-Color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    height: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex; /* Para centralizar o + e - */
+    justify-content: center;
+    align-items: center;
+
+}       
+    
+    .btnAumentar {
+        margin-bottom: 3px;
+    }
+
+    #open-close {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .msgfuncionamento {
+        width: 80px;
+    }
+    .msgverhorarios {
+        width: 150px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+
+
+
+
+    #menu-opcoes {
+        display: flex;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .item-pai {
+        width: 95%;
+    
+    
+    }
+    
+
+
+    .btnDiminuir, .btnAumentar, .btnRemover {
+    color: black;
+    background-Color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    height: 30px;
+    /* border-radius: 5px; */ /* Cantos arredondados */
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex; /* Para centralizar o + e - */
+    justify-content: center;
+    align-items: center;
+    /*padding-top: 1px;*/
+
+}
+
+    .btnDiminuir:hover, .btnAumentar:hover, .btnRemover:hover {
+        background-color: #E8931F;
+        cursor: pointer;
+    }
+    .btnAumentar {
+        margin-bottom: 3px;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+
+    #menu-opcoes {
+        display: flex;
+        width: 100%;
+        justify-content: start;
+
+    }
+
+
+    .item-pai {
+        width: 95%;
+    
+    }
+
+    
+
+    
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+
+
+
+.divlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+    #menu-opcoes {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+
+    .item-pai {
+        width: 100%;
+    
+    }
+}
+

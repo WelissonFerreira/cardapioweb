@@ -1,0 +1,35 @@
+Para navegar no DOM, você usa esses comandos principais:
+
+➡️ Subir:
+ • .parentElement → sobe do filho para o pai.
+
+Exemplo:
+
+event.target.parentElement
+
+➡️ Descer:
+ • .children → pega todos os filhos diretos.
+ • .querySelector() ou .querySelectorAll() → busca elementos dentro de outro.
+
+let filhos = elemento.children;  
+let especifico = elemento.querySelector('.classe');
+
+
+➡️ Ir pros lados:
+ • .nextElementSibling → vai para o próximo irmão.
+ • .previousElementSibling → vai para o irmão anterior.
+
+Exemplo:
+
+let proximo = elemento.nextElementSibling;
+
+✅ DICA BOA:
+
+Pense sempre assim:
+
+“Onde estou? Onde preciso chegar? O que está entre esses dois pontos?”
+
+Aí decide:
+ • subir com .parentElement,
+ • descer com .children ou .querySelector(),
+ • andar pros lados com .nextElementSibling.

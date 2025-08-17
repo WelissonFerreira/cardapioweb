@@ -1320,108 +1320,103 @@ let scrollPosition = 0
 // =======================================================================================================
 
 
-// ENVIAR PEDIDO PARA O WHATSAPP
+// BOTÃO DE FINALIZAR PEDIDO
 const btnFinalizarPedidoWhatsApp = document.getElementById('Finalizar-Pedido');
 
 btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
-    // 1. Capturar os dados pessoais e de entrega
+    // --- 1. Captura dados do cliente ---
     let nomeCliente = document.querySelector('#nomeUsuario').value;
     let telefoneCliente = document.querySelector('#cellUsuario').value;
     let tipoPedido = document.querySelector('input[name="TipoPedido"]:checked').id;
 
-    let mensagemWhatsApp = `*-- NOVO PEDIDO - ARTHUR LANCHES --*\n\n`;
+    // --- 2. Monta array de itens do pedido ---
+    let itensPedido = itensCarrinho.map(item => ({
+        nome: item.produto.nome,
+        preco: item.produto.preco * item.quantidade,
+        quantidade: item.quantidade,
+        observacoes: item.observacao || ''
+    }));
 
-    // Dados do cliente
-    mensagemWhatsApp += `*Dados do Cliente:*\n`;
+    // --- 3. Captura endereço se for entrega ---
+    const endereco = tipoPedido === 'Entrega' ? {
+        bairro: document.querySelector('#Bairro').value,
+        rua: document.querySelector('#Rua').value,
+        numero: document.querySelector('#NumeroCasa').value,
+        complemento: document.querySelector('#complemento').value
+    } : null;
+
+    // --- 4. Captura forma de pagamento e troco ---
+    const formaPagamentoSelecionada = document.querySelector('input[name="formaPagamento"]:checked');
+    let textoFormaPagamento = formaPagamentoSelecionada?.id || 'Não especificada';
+    let valorTroco = parseFloat(document.getElementById('inputTroco')?.value || 0);
+
+    // --- 5. Monta objeto completo para o backend ---
+    const pedidoParaBackend = {
+        cliente: {
+            nome: nomeCliente,
+            telefone: telefoneCliente,
+            tipo: tipoPedido === 'Entrega' ? 'Entrega' : 'Retirada',
+        },
+        endereco: endereco,
+        itens: itensPedido,
+        pagamento: textoFormaPagamento,
+        troco: valorTroco
+    };
+
+    // --- 6. Envia para o backend para impressão USB ---
+    fetch('http://localhost:3000/api/pedido', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(pedidoParaBackend)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data.mensagem);
+        alert('Pedido enviado para impressão!');
+    })
+    .catch(err => console.error('Erro ao enviar pedido:', err));
+
+    // --- 7. Monta mensagem para WhatsApp ---
+    let mensagemWhatsApp = '*-- NOVO PEDIDO - ARTHUR LANCHES --*\n\n';
+    mensagemWhatsApp += '*Dados do Cliente:*\n';
     mensagemWhatsApp += `Nome: ${nomeCliente}\n`;
     mensagemWhatsApp += `Telefone: ${telefoneCliente}\n`;
     mensagemWhatsApp += `Tipo de Pedido: ${tipoPedido === 'Entrega' ? 'Entrega' : 'Retirada'}\n`;
 
-    // Endereço se for entrega
     if (tipoPedido === 'Entrega') {
-        let bairro = document.querySelector('#Bairro').value;
-        let rua = document.querySelector('#Rua').value;
-        let numero = document.querySelector('#NumeroCasa').value;
-        let complemento = document.querySelector('#complemento').value;
-
-        mensagemWhatsApp += `\n*Endereço de Entrega:*\n`;
-        mensagemWhatsApp += `Bairro: ${bairro}\n`;
-        mensagemWhatsApp += `Rua: ${rua}\n`;
-        mensagemWhatsApp += `Número: ${numero}\n`;
-        if (complemento) {
-            mensagemWhatsApp += `Complemento: ${complemento}\n`;
-        }
+        mensagemWhatsApp += '\n*Endereço de Entrega:*\n';
+        mensagemWhatsApp += `Bairro: ${endereco.bairro}\n`;
+        mensagemWhatsApp += `Rua: ${endereco.rua}\n`;
+        mensagemWhatsApp += `Número: ${endereco.numero}\n`;
+        if (endereco.complemento) mensagemWhatsApp += `Complemento: ${endereco.complemento}\n`;
     }
 
-    // Itens do pedido
-    mensagemWhatsApp += `\n*Itens do Pedido:*\n`;
-
+    mensagemWhatsApp += '\n*Itens do Pedido:*\n';
     let totalFinalParaWhatsApp = 0;
-
     if (itensCarrinho.length > 0) {
         itensCarrinho.forEach((item, index) => {
             let linhaItem = `${index + 1}. ${item.quantidade}x ${item.produto.nome} (R$ ${(item.produto.preco * item.quantidade).toFixed(2).replace('.', ',')})`;
-            if (item.observacao && item.observacao.trim() !== '') {
-                linhaItem += `\n  - Observação: ${item.observacao}`;
-            }
-            mensagemWhatsApp += linhaItem + `\n`;
+            if (item.observacao && item.observacao.trim() !== '') linhaItem += `\n  - Observação: ${item.observacao}`;
+            mensagemWhatsApp += linhaItem + '\n';
             totalFinalParaWhatsApp += item.produto.preco * item.quantidade;
         });
     } else {
-        mensagemWhatsApp += `Nenhum item adicionado ao carrinho.\n`;
+        mensagemWhatsApp += 'Nenhum item adicionado ao carrinho.\n';
     }
 
     mensagemWhatsApp += `\n*Total do Pedido: R$ ${totalFinalParaWhatsApp.toFixed(2).replace('.', ',')}*\n`;
-
-    // Informações de pagamento
-    let formaPagamentoSelecionada = document.querySelector('input[name="formaPagamento"]:checked');
-    let textoFormaPagamento = 'Não especificada';
-
-    if (formaPagamentoSelecionada) {
-        if (formaPagamentoSelecionada.id === 'Pix') {
-            textoFormaPagamento = 'PIX';
-        } else if (formaPagamentoSelecionada.id === 'pagamentoCartao') {
-            textoFormaPagamento = 'Cartão';
-        } else if (formaPagamentoSelecionada.id === 'pagamentoDinheiro') {
-            textoFormaPagamento = 'Dinheiro';
-        }
-    }
-
-    mensagemWhatsApp += `\n*Informações de Pagamento:*\n`;
+    mensagemWhatsApp += '\n*Informações de Pagamento:*\n';
     mensagemWhatsApp += `Forma de Pagamento: ${textoFormaPagamento}\n`;
+    mensagemWhatsApp += (textoFormaPagamento === 'Dinheiro' && valorTroco > 0) 
+        ? `Precisa de troco para: R$ ${valorTroco.toFixed(2).replace('.', ',')}\n` 
+        : 'Não precisa de troco.\n';
 
-    // Troco — sem verificar display, só forma de pagamento e valor válido
-    let inputTrocoElement = document.getElementById('inputTroco');
-let valorTroco = inputTrocoElement ? inputTrocoElement.value.trim() : '';
-
-console.log('Valor do troco capturado:', valorTroco);
-
-if (textoFormaPagamento === 'Dinheiro') {
-    let valorTrocoNum = parseFloat(valorTroco);
-    console.log('Valor do troco como número:', valorTrocoNum);
-    if (!isNaN(valorTrocoNum) && valorTrocoNum > 0) {
-        mensagemWhatsApp += `Precisa de troco para: R$ ${valorTrocoNum.toFixed(2).replace('.', ',')}\n`;
-    } else {
-        mensagemWhatsApp += `Não precisa de troco.\n`;
-    }
-} else {
-    mensagemWhatsApp += `Não precisa de troco.\n`;
-}
-
-
-    // Número do WhatsApp (com DDI e DDD)
-    let numeroWhatsApp = '5582988204888';
-
-    // Codifica mensagem para URL
-    let mensagemCodificada = encodeURIComponent(mensagemWhatsApp);
-
-    // Link WhatsApp
-    let linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
-
-    // Abre WhatsApp em nova aba
+    // --- 8. Envia mensagem para WhatsApp ---
+    const numeroWhatsApp = '5582999261614';
+    const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemWhatsApp)}`;
     window.open(linkWhatsApp, '_blank');
 
-    // Fecha modal e libera rolagem da página
+    // --- 9. Fecha modal e libera rolagem ---
     document.querySelector('#ModalFazerPedido').style.display = 'none';
     document.body.style.overflow = 'auto';
 });

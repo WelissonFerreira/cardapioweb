@@ -1364,7 +1364,7 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
     };
 
     // --- 6. Envia para o backend para impressão USB ---
-    fetch('http://localhost:3000/api/pedido', {
+    fetch('https://9e8471e4a521.ngrok-free.app/api/pedido', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(pedidoParaBackend)

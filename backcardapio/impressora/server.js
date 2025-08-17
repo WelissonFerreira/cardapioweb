@@ -1,16 +1,18 @@
-
-// backcardapio/server.js ou app.js
+// backcardapio/server.js
 const express = require('express');
-const bodyParser = require('body-parser');
+const cors = require("cors");
 const { imprimirPedido } = require('./imprimir'); // nosso código de impressão
 
 const app = express();
 const PORT = 3000;
 
-app.use(bodyParser.json());
+// middlewares
+app.use(cors());
+app.use(express.json());
 
 // Endpoint para receber pedidos do frontend
 app.post('/api/pedido', (req, res) => {
+    console.log('Recebendo pedido...');
     const pedido = req.body;
     console.log('Pedido recebido:', pedido);
 

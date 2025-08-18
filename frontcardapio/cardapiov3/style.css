@@ -244,7 +244,97 @@ option {
 
 
 
-/* CONTEUDO PRINCIPAL - CARDS, IMG, DESCRIÇÕES, PREÇO */
+/* CONTEUDO PRINCIPAL - DESTAQUE, CARDS, IMG, DESCRIÇÕES, PREÇO */
+
+#destaques {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+    color: black;
+    padding: 10px;
+    overflow-x: scroll;
+    
+    
+}
+
+.divimage-destaque {
+    display: flex;
+    height: 120px;
+    
+    
+}
+
+.fotodestaques {
+    height: 120px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.h4destaque {
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: bolder;
+}
+
+.descricao-destaque {
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.ingredientes-destaque {
+    font-size: 0.6rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.span-riscado-destaque {
+    text-decoration: line-through;
+}
+
+.botaodestaque {
+    font-size: 0.6rem;
+    margin-top: auto;
+}
+
+.card-destaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    box-shadow: 1px 1px 8px 1px gray;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    flex-basis: 200px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    
+}
+
+
+
+
+.conteudo-destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    flex-grow: 1;
+    
+}
+
+
 .item-pai {
     display: flex;
     flex-direction: row;
@@ -1135,9 +1225,9 @@ footer {
 }
 
 .imgsugestao-guarana2L {
-    width: 130px;
+    width: 150px;
     height: 140px;
-    margin-left: -10%;
+    margin-left: -12%;
 }
 
 .imgsugestao-fanta2L {

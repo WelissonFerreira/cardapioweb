@@ -909,6 +909,7 @@ let scrollPosition = 0
         let encontrarItem = itensCarrinho.indexOf(item);
         itensCarrinho.splice(encontrarItem, 1);
         atualizarCarrinho();
+        document.body.style.overflow = 'auto'
     });
 
     // Anexar botões e span de quantidade à divControleBotoes
@@ -917,6 +918,7 @@ let scrollPosition = 0
     divControleBotoes.appendChild(botaoDiminuir);
     botaoRemover.appendChild(iconeRemover); // Ícone no botão
     divControleBotoes.appendChild(botaoRemover); // Botão à div de botões
+
 
 
     // Anexar o preço e os controles de botões à divControleDeQuantidade
@@ -955,7 +957,11 @@ let scrollPosition = 0
 
         if (itensCarrinho.length === 0) {
             modalCarrinho.style.display = 'none'
-            document.body.style.overflow = 'auto'
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            document.body.style.overflow = 'auto'; // Reabilita a rolagem
+            window.scrollTo(0, scrollPosition);
           // Certifique-se de que a mensagem de carrinho vazio temporária não esteja visível aqui
         mensagemCarrinhoVazioDiv.style.display = 'none'; 
         }
@@ -1364,7 +1370,7 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
     };
 
     // --- 6. Envia para o backend para impressão USB ---
-    fetch('https://december-bennett-cars-tobago.trycloudflare.com/api/pedido', {
+    fetch('arthurlanchesback.duckdns.org/api/pedido', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(pedidoParaBackend)

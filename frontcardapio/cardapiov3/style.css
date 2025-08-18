@@ -255,12 +255,22 @@ option {
     border-radius: 10px;
     font-weight: 700;
     font-style: normal;
-    margin-top: 20px;
     color: black;
     padding: 10px;
     overflow-x: scroll;
     
-    
+}
+
+.h4destaquePrincipal {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: -20px;
+    border-radius: 10px;
 }
 
 .divimage-destaque {
@@ -277,10 +287,12 @@ option {
 }
 
 .h4destaque {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: bolder;
+    color: black;
+    
 }
 
 .descricao-destaque {

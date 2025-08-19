@@ -287,7 +287,7 @@ option {
 }
 
 .h4destaque {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: bolder;
@@ -305,9 +305,13 @@ option {
 }
 
 .ingredientes-destaque {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     line-height: 1.2;
     letter-spacing: 1px;
+}
+
+.span-destaque {
+    margin: 15%;
 }
 
 .span-riscado-destaque {
@@ -317,6 +321,12 @@ option {
 .botaodestaque {
     font-size: 0.6rem;
     margin-top: auto;
+}
+
+.destaqueAdicionar {
+    left: 20%;
+    margin-top: 5%;
+    margin-bottom: 0%;
 }
 
 .card-destaque {
@@ -340,7 +350,7 @@ option {
 .conteudo-destaque {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     justify-content: flex-start;
     flex-grow: 1;
     

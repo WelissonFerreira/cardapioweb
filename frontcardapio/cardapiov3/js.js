@@ -1550,15 +1550,6 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
 
     // EVENTO BOTÃO OUTRAS OPÇÕES DE BEBIDAS
 
-    let outrasOpcoesBebidas = document.getElementById('verOutrasBebidas')
-    outrasOpcoesBebidas.classList.add('verOutrasBebidas')
-    let grupoCoca = document.getElementById('grupoCoca')
-    let grupoGuarana = document.getElementById('grupoGuarana')
-    let grupoFanta = document.getElementById('grupoFanta')
-    let grupoSoda = document.getElementById('grupoSoda')
-
-
-
 
 
     let qrcode = document.getElementById('qrcode')

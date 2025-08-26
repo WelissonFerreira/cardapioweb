@@ -16,30 +16,43 @@
     <div id="topomenu">
         <div class="bannermenu"></div>
         <div class="controleCabecalho">
-            <div class="divlogo"><img class="logomenu" src="imagens/novalogoatualizada.jpg" alt=""></div>
+            <button class="btnEntrega">Taxa de Entrega 👈</button>
+    
+            <div id="modalTaxaEntrega">
+                <div class="conteudoModalTaxa">
+                    <span class="close-button-taxas">&times;</span>
+                    <span class="modal-sub-titulos">Taxas de Entrega</span>
+                        <ul>
+                            <li class="formapagamento-modal">Feitosa | R$ 3,00</li>
+                            <li class="formapagamento-modal">Jacintinho | R$ 3,00</li>
+                            <li class="formapagamento-modal">Barro Duro | R$ 4,00</li>
+                            <li class="formapagamento-modal">São Jorge | R$ 6,00</li>
+                            <li class="formapagamento-modal">Serraria | R$ 8,00</li>
+                            <li class="formapagamento-modal">Farol | R$ 8,00</li>
+                            <li class="formapagamento-modal">Gruta | R$ 9,00</li>
+                            <li class="formapagamento-modal">Cruz das Almas | R$ 6,00</li>
+                            <li class="formapagamento-modal">Jatiúca | R$ 9,00</li>
+                            <li class="formapagamento-modal">Ponta Verde | R$ 3,00</li>
+                            <li class="formapagamento-modal">Pajuçara | R$ 3,00</li>
+                            <li class="formapagamento-modal">Jaraguá | R$ 3,00</li>
+                        </ul>
+
+                </div>
+            </div>
+            <div class="divlogo"><img class="logomenu" src="imagens/geral/logo2.jpg" alt=""></div>
                 <div id="open-close"></div>
             <div class="divpmenu">
-                <p class="pmenu">Seja bem-vindo ao Arthur Lanches! <br> Faça já o seu pedido!</p>
+                
+                <p class="pmenu">Seja bem-vindo ao Sanduba do Garoto!<br> Faça já o seu pedido!</p>
             </div>
         </div>
     </div>
-
-    
-    
-
-
-
-
-
-
-
-
 
 <!-- MODAL HORARIOS -->
 <div id="modalhorarios">
     <div class="contmodalhorarios">
         <span class="close-button-horarios">&times;</span>
-        <h3 class="h3modal">ARTHUR LANCHES</h3>
+        <h3 class="h3modal">SANDUBA DO GAROTO</h3>
         <p class="pmodalhorario">Tempo médio delivery: 30-60 minutos</p>
         <p class="pmodalhorario">Tempo médio balcão: 30 - 50 minutos</p>
         <br>
@@ -62,223 +75,225 @@
             <li class="formapagamento-modal">Cartão de Crédito - Maquininha</li>
         </ul>
 
-
     </div>
 </div>
 
 <main id="principal">
-<h4 class="h4destaquePrincipal">Destaques</h4>
+<h4 class="h4destaquePrincipal">COMBOS SEMANAIS</h4>
     
 
     <div id="destaques">
         
         <div class="card-destaque">
-            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/lanches/especial4grande.png" alt=""></div>
+            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/combos/combopassaporte.png" alt=""></div>
             <div class="conteudo-destaque">
-                <h4 class="h4destaque">Especial Arthur Grande</h4>
-                <p class="descricao-destaque">Especial da casa, dividido em 4 pedaços e servem 4 pessoas.</p>
-                <p class="ingredientes-destaque">Ingredientes: Pão Grande | Bacon | Calabresa | Frango Desfiado...  <a class="botaomodal botaodestaque" href="#expansao" data-model-target="#model-arthur-grande">Ver mais</a></p>
-                
+                <h4 class="h4destaque">Combo Passaporte</h4>
+                <p class="descricao-destaque">Passaporte Acompanhado de Batata Frita + Caçulinha</p>              
             </div>
             <div>
-                <span class="span-riscado-destaque">R$ 60,00</span>
-                <span class="span-destaque">R$ 55,00</span>
-                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-arthur-grande"><i
+                <span class="span-riscado-destaque">R$ 26,00</span>
+                <span class="span-destaque">R$ 22,00</span>
+                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-combopassaporte"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
             </div>
             
         </div>
 
         <div class="card-destaque">
-            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/lanches/x-tudo.jpg" alt=""></div>
+            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/combos/comboburgao.png" alt=""></div>
             <div class="conteudo-destaque">
-                <h4 class="h4destaque">X-Tudo</h4>
-                <p class="descricao-destaque">X-Tudo super recheado. Serve 2 pessoas.</p>
-                <p class="ingredientes-destaque">Ingredientes: Pão Grande | Bacon | Calabresa | Frango Desfiado | Salsicha...<a class="botaomodal botaodestaque" href="#expansao" data-model-target="#model-xtudo">Ver mais</a> </p>
+                <h4 class="h4destaque">Combo Burgão</h4>
+                <p class="descricao-destaque">X-Burguer Acompanhado de Batata Frita + Caçulinha</p>
             </div>
             <div>
-                <span class="span-riscado-destaque">R$ 40,00</span>
-                <span class="span-destaque">R$ 34,00</span>
-                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-xtudo"><i
+                <span class="span-riscado-destaque">R$ 26,00</span>
+                <span class="span-destaque">R$ 20,00</span>
+                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-comboburgao"><i
                         class="fa-solid fa-cart-plus"></i> Adicionar</button>
             </div>
         </div>
 
         <div class="card-destaque">
-            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/lanches/passaportecarnesol.png" alt=""></div>
+            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/combos/combofile.png" alt=""></div>
             <div class="conteudo-destaque">
-                <h4 class="h4destaque">Passaporte de Carne de Sol</h4>
-                <p class="descricao-destaque">Passaporte de Carne de Sol super recheado</p>
-                <p class="ingredientes-destaque">Ingredientes: Pão Bola | Carne de Sol | Salsicha...<a class="botaomodal botaodestaque" href="#expansao" data-model-target="#model-passaporte-carne">Ver mais</a> </p>
+                <h4 class="h4destaque">Combo FiléZão</h4>
+                <p class="descricao-destaque">X FiléZão Acompanhado de Batata Frita + Caçulinha</p>
             </div>
             <div>
-                <span class="span-riscado-destaque">R$ 30,00</span>
-                <span class="span-destaque">R$ 25,00</span>
-                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-passaporte-carnesol"><i
+                <span class="span-riscado-destaque">R$ 32,00</span>
+                <span class="span-destaque">R$ 27,00</span>
+                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-combofilezao"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
             </div>
         </div>
 
         <div class="card-destaque">
-            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/lanches/carnedesolcaipira.png" alt=""></div>
+            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/combos/combofiledefrango.png" alt=""></div>
             <div class="conteudo-destaque">
-                <h4 class="h4destaque">Carne de Sol Caipira</h4>
-                <p class="descricao-destaque">Carne de Sol Caipira topadão</p>
-                <p class="ingredientes-destaque">Ingredientes: Pão | Carne de Sol Desfiada | Catupiry | Queijo | Presunto</p>
+                <h4 class="h4destaque"> Combo FiléZão de Frango</h4>
+                <p class="descricao-destaque">FiléZão de Frango Acompanhado de Batata Frita + Caçulinha</p>
             </div>
             <div>
                 <span class="span-riscado-destaque">R$ 30,00</span>
-                <span class="span-destaque">R$ 25,00</span>
-                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-XCarneDeSol"><i
+                <span class="span-destaque">R$ 26,00</span>
+                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-filezaofrango"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
             </div>
         </div>
-
-        <div class="card-destaque">
-            <div class="divimage-destaque"><img class="fotodestaques" src="imagens/lanches/xfile.png" alt=""></div>
-            <div class="conteudo-destaque">
-                <h4 class="h4destaque">X-Filé</h4>
-                <p class="descricao-destaque">X-Filé topadão</p>
-                <p class="ingredientes-destaque">Ingredientes: Pão | Filé de Alcatra | Ovo | Queijo | Presunto | Ervilha...<a class="botaomodal botaodestaque" href="#expansao" data-model-target="#model-xfile">Ver mais</a>  </p>
-            </div>
-            <div>
-                <span class="span-riscado-destaque">R$ 60,00</span>
-                <span class="span-destaque">R$ 55,00</span>
-                <button class="AdicionarCarrinho destaqueAdicionar" data-produto-id="produto-xfile"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-            </div>
-        </div>
-
-
     </div>
 
     <div id="menu-opcoes">
-        
-        <select id="menu-categorias" name="">
-            <option value="">Selecione uma categoria</option>
-            <option value="titulo-especiais">ESPECIAIS</option>
-            <option value="titulo-passaporte">PASSAPORTES</option>
-            <option value="titulo-sanduiches">SANDUICHES</option>
-            <option value="titulo-bebidas">BEBIDAS</option>
-        </select>
+        <button class="botoesCategorias" data-categoria="combos-do-dia">COMBOS DO DIA</button>
+        <button class="botoesCategorias" data-categoria="especiais-categoria">ESPECIAIS</button>
+        <button class="botoesCategorias" data-categoria="passaportes-categoria">PASSAPORTES</button>
+        <button class="botoesCategorias" data-categoria="sanduiches-categoria">SANDUICHES & BURGUER'S</button>
+        <button class="botoesCategorias" data-categoria="bebidas-categoria">BEBIDAS</button>
     </div>
 
-    <!-- PRODUTO E MODAL - ESPECIAL ARTHUR GRANDE -->
+    <!-- PRODUTO E MODAL - PASSAPORTE + CAÇULINHA -->
 
-    <div class="divTitulos">
-        <h4 id="titulo-especiais">ESPECIAIS</h4>
+    <div id="combos-do-dia" class="divTitulos">
+        <h4 id="titulo-especiais">COMBOS DO DIA</h4>
     </div>
 
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
-                <img class="fotosanduba-especial" src="imagens/lanches/especial4grande.png">
+                <img class="fotosanduba-especial" src="imagens/combos/combosegunda.png">
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">Especial Arthur Grande</h4>
-                <p class="descricao-produtos">Especial da casa, dividido em 4 pedaços e servem 4 pessoas.</p>
-                <p class="descricao-ingredientes"> Ingredientes: Pão Grande | Bacon | Calabresa | Frango Desfiado... </p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-arthur-grande">Ver mais</a>
+                <h4 class="titulo-produtos">Segunda-Feira</h4>
+                <p class="descricao-produtos">Delecioso Passaporte + Caçulinha</p>
                 <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 60,00</span>
-                    <span>R$ 55,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-arthur-grande"><i
+                    <span class="preco-riscado">R$ 25,00</span>
+                    <span>R$ 18,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-combo-segundafeira"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
-
-            <div id="model-arthur-grande" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2 class="descricao-produtos-modal">Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão Grande</li>
-                        <li>Bacon</li>
-                        <li>Calabresa</li>
-                        <li>Frango Desfiado</li>
-                        <li>Filé de Alcatra</li>
-                        <li>2x Salsicha</li>
-                        <li>2x Ovos</li>
-                        <li>2x Hamburguer</li>
-                        <li>2x Queijo</li>
-                        <li>2x Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                        <li>Tomate</li>
-                    </ul>
-                    <div class="fotolanchemodal"><img class="fotosanduba"
-                            src="imagens/lanches/especial4grande.png">
-                    </div>
-                        <div id="botoes-produto-modal">
-                            <button class="AdicionarCarrinho" data-produto-id="produto-arthur-grande"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                        </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
 
 
 
-    <!-- PRODUTO E MODAL - ESPECIAL ARTHUR BABY -->
+    <!-- PRODUTO E MODAL - X-BURGUER + CAÇULINHA -->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
                 <img class="fotosanduba-especial"
+                    src="imagens/combos/combotercafeira.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Terça-Feira</h4>
+                <p class="descricao-produtos">X-Burguer + Caçulinha</p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 25,00</span>
+                    <span>R$ 19,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-combo-tercafeira"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRODUTO E MODAL - FILÉ DE CARNE + CAÇULINHA -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image">
+                <img class="fotosanduba-especial" src="imagens/combos/comboquarta.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Quarta-Feira</h4>
+                <p class="descricao-produtos">Filé de Carne + Caçulinha</p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 26,00</span>
+                    <span>R$ 22,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-combo-quartafeira"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- PRODUTO E MODAL - FILÉ DE FRANGO + CAÇULINHA -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image">
+                <img class="fotosanduba-especial"
+                    src="imagens/combos/comboquinta.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Quinta-Feira</h4>
+                <p class="descricao-produtos">Filé de Frango + Caçulinha</p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 25,00</span>
+                    <span>R$ 20,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-combo-quintafeira"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="especiais-categoria" class="divTitulos">
+        <h4 id="titulo-passaporte">ESPECIAIS</h4>
+    </div>
+
+    <!-- GAROTO VIP -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image">
+                <img class="fotosanduba"
                     src="imagens/lanches/arthurbabyatt.png">
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">Especial Arthur Baby</h4>
-                <p class="descricao-produtos">Especial da casa, dividido em 2 pedaços e servem 2 pessoas.</p>
-                <p class="descricao-ingredientes"> Ingredientes: Pão Grande | Bacon | Calabresa | Frango Desfiado...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-arthur-baby">Ver mais</a> 
+                <h4 class="titulo-produtos">Garoto VIP</h4>
+                <p class="descricao-produtos">Garoto VIP</p>
+                <p class="descricao-ingredientes">Ingredientes: Queijo | Presunto | Filé de Frango | Filé de Alcatra | Bacon | Ovo | Hambúrguer | Tomate | Molho</p>
                 <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 45,00</span>
-                    <span>R$ 40,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-arthur-baby"><i
+                    <span class="preco-riscado">R$ 37,00</span>
+                    <span>R$ 33,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-garotoVIP"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
-
-            <div id="model-arthur-baby" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão Grande</li>
-                        <li>Bacon</li>
-                        <li>Calabresa</li>
-                        <li>Frango Desfiado</li>
-                        <li>Filé de Alcatra</li>
-                        <li>Salsicha</li>
-                        <li>Ovos</li>
-                        <li>Hamburguer</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                        <li>Tomate</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/arthurbabyatt.png">
-                    </div>
-                        <div id="botoes-produto-modal">
-                            <button class="AdicionarCarrinho" data-produto-id="produto-arthur-baby"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                        </div>
-                </div>
-                </div>
-            </div>
-
-
         </div>
     </section>
 
-    <div class="divTitulos">
+        <!-- GAROTO VIP ESPECIAL -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image">
+                <img class="fotosanduba"
+                    src="imagens/lanches/especial4grande.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Garoto VIP Especial</h4>
+                <p class="descricao-produtos">Garoto VIP Especial</p>
+                <p class="descricao-ingredientes">Ingredientes: Queijo | Presunto | Frango Desfiado | Filé de Alcatra | Bacon | 2x Ovos | 2x Hambúrguer | Tomate | Molho</p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 40,00</span>
+                    <span>R$ 36,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-garotoVIPEspecial"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div id="passaportes-categoria" class="divTitulos">
         <h4 id="titulo-passaporte">PASSAPORTES</h4>
     </div>
 
@@ -288,44 +303,18 @@
 
             <div class="card-image">
                 <img class="fotosanduba"
-                    src="imagens/lanches/passaportecarne.png">
-
+                    src="imagens/lanches/passaportecarnealternativo.png">
             </div>
 
             <div class="card-conteudo">
                 <h4 class="titulo-produtos">Passaporte de Carne</h4>
                 <p class="descricao-produtos">Passaporte de carne super recheado</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão Bola | Carne Moída | Salsicha | Tomate Verde...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-passaporte-carne">Ver mais</a> 
+                <p class="descricao-ingredientes">Ingredientes: Carne Moída | Salsicha | Tomate | Batata Palha</p>
                 <div id="botoes-produto">
                     <span class="preco-riscado">R$ 23,00</span>
                     <span>R$ 17,00</span>
                     <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-carne"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-passaporte-carne" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão Sedão</li>
-                        <li>Carne Moída</li>
-                        <li>Salsicha</li>
-                        <li>Tomate Picado Verde</li>
-                        <li>Milho e Ervilha</li>
-                        <li>Queijo Ralado</li>
-                        <li>Katchup</li>
-                        <li>Maionese</li>
-                        <li>Batata Palha</li>
-                    </ul>
-                    <div class="fotolanchemodal"><img class="fotosanduba"src="imagens/lanches/passaportecarne.png">
-                    </div>
-                        <div id="botoes-produto-modal">
-                            <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-carne"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                        </div>
                 </div>
             </div>
         </div>
@@ -339,342 +328,103 @@
         <div class="card-pai">
             <div class="card-image">
                 <img class="fotosanduba"
-                    src="imagens/lanches/passaportefrango.png">
+                    src="imagens/lanches/passaportefrangoalternativo.png">
             </div>
 
             <div class="card-conteudo">
                 <h4 class="titulo-produtos">Passaporte de Frango</h4>
                 <p class="descricao-produtos">Passaporte de frango super recheado</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão Bola | Frango Desfiado | Salsicha | Tomate Verde...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-passaporte-frango">Ver mais</a> 
-
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 24,00</span>
-                    <span>R$ 18,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-frango"><i
+                <p class="descricao-ingredientes">Ingredientes: Frango Desfiado | Salsicha | Tomate | Batata Palha</p>
+                    <div id="botoes-produto">
+                        <span class="preco-riscado">R$ 24,00</span>
+                        <span>R$ 19,00</span>
+                        <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-frango"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-passaporte-frango" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão Sedão</li>
-                        <li>Frango Desfiado</li>
-                        <li>Salsicha</li>
-                        <li>Tomate Picado Verde</li>
-                        <li>Milho e Ervilha</li>
-                        <li>Queijo Ralado</li>
-                        <li>Katchup</li>
-                        <li>Maionese</li>
-                        <li>Batata Palha</li>
-                    </ul>
-                    <div class="fotolanchemodal"><img class="fotosanduba"src="imagens/lanches/passaportefrango.png">
                     </div>
-                        <div id="botoes-produto-modal">
-                            <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-frango"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                        </div>
-                </div>
             </div>
         </div>
     </section>
-
-
-    <!-- PRODUTO E MODAL - PASSAPORTE DE CARNE DE SOL -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/passaportecarnesol.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Passaporte de Carne de Sol</h4>
-                <p class="descricao-produtos">Passaporte de Carne de Sol super recheado</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão Bola | Carne de Sol | Salsicha | Catupiry...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-passaporte-carneSol">Ver mais</a> 
-
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 30,00</span>
-                    <span>R$ 25,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-carnesol"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-passaporte-carneSol" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão Sedão</li>
-                        <li>Carne de Sol</li>
-                        <li>Catupiry</li>
-                        <li>Queijo Coalho</li>
-                        <li>Salsicha</li>
-                        <li>Tomate Picado Verde</li>
-                        <li>Milho e Ervilha</li>
-                        <li>Queijo Ralado</li>
-                        <li>Ketchup</li>
-                        <li>Maionese</li>
-                        <li>Batata Palha</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                    <img class="fotosanduba"src="imagens/lanches/passaportecarnesol.png">
-                    </div>
-                        <div id="botoes-produto-modal">
-                            <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-carnesol"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- PRODUTO E MODAL - PASSAPORTE DE MISTO -->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
                 <img class="fotosanduba"
-                    src="imagens/lanches/passaportemisto.png">
+                    src="imagens/lanches/sanduichemistoalternativo.png">
             </div>
 
             <div class="card-conteudo">
                 <h4 class="titulo-produtos">Passaporte de Misto</h4>
                 <p class="descricao-produtos">Passaporte de Misto super recheado</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão Sedão | Carne Moída | Frango Desfiado | Salsicha...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-passaporte-misto">Ver mais</a> 
+                <p class="descricao-ingredientes">Ingredientes: Carne Moída | Frango Desfiado | Salsicha | Tomate | Batata Palha</p>
                 <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 28,00</span>
-                    <span>R$ 24,00</span>
+                    <span class="preco-riscado">R$ 26,00</span>
+                    <span>R$ 21,00</span>
                     <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-misto"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
-
-            <div id="model-passaporte-misto" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão Sedão</li>
-                        <li>Carne Moída</li>
-                        <li>Frango Desfiado</li>
-                        <li>Salsicha</li>
-                        <li>Tomate Picado Verde</li>
-                        <li>Milho e Ervilha</li>
-                        <li>Queijo Ralado</li>
-                        <li>Katchup</li>
-                        <li>Maionese</li>
-                        <li>Batata Palha</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                    <img class="fotosanduba"src="imagens/lanches/passaportemisto.png">
-                    </div>
-                        <div id="botoes-produto-modal">
-                            <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-misto"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                        </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- PRODUTO E MODAL - X-TUDO -->
 
-        <div class="divTitulos">
-            <h4 id="titulo-sanduiches">SANDUICHES</h4>
-        </div>
-
+    <!-- PRODUTO E MODAL - PASSAPORTE DE BACON -->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
                 <img class="fotosanduba"
-                    src="imagens/lanches/x-tudo.jpg">
+                    src="imagens/lanches/passaportebaconatt.png">
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">X-Tudo</h4>
-                <p class="descricao-produtos">X-Tudo super recheado. Serve 2 pessoas.</p>
-                <p class="descricao-ingredientes">Ingredientes: 1x Pão Grande | Bacon | Calabresa | Frango Desfiado...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-xtudo">Ver mais</a> 
-                    <div id="botoes-produto">
-                        <span class="preco-riscado">R$ 40,00</span>
-                        <span>R$ 34,00</span>
-                        <button class="AdicionarCarrinho" data-produto-id="produto-xtudo"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                    </div>
-            </div>
+                <h4 class="titulo-produtos">Passaporte de Bacon</h4>
+                <p class="descricao-produtos">Passaporte de Bacon super recheado</p>
+                <p class="descricao-ingredientes">Ingredientes: Carne ou Frango | Bacon | Tomate | Batata Palha</p>
 
-            <div id="model-xtudo" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão Grande</li>
-                        <li>Bacon</li>
-                        <li>Calabresa</li>
-                        <li>Frango Desfiado</li>
-                        <li>Salsicha</li>
-                        <li>Ovo</li>
-                        <li>Hamburguer</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                    <img class="fotosanduba"src="imagens/lanches/x-tudo.jpg">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-xtudo"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 26,00</span>
+                    <span>R$ 21,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-bacon"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
         </div>
     </section>
+
+        <!-- PRODUTO E MODAL - PASSAPORTE DE CALABRESA -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image">
+                <img class="fotosanduba"
+                    src="imagens/lanches/passaportecalabresaalternativo.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Passaporte de Calabresa</h4>
+                <p class="descricao-produtos">Passaporte de Calabresa super recheado</p>
+                <p class="descricao-ingredientes">Ingredientes: Frango | Calabresa | Milho e Ervilha | Tomate | Batata Palha</p>
+
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 26,00</span>
+                    <span>R$ 21,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-passaporte-calabresa"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- SANDUICHES DE CHAPA -->
 
-    <!-- MISTO QUENTE -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/mistoquente.png">
-            </div>
+            <!-- PRODUTO E MODAL - X-Burguer -->
 
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Misto Quente</h4>
-                <p class="descricao-produtos">Misto Quente naquele padrão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão Assado na chapa | 2 Fatias de Queijo | 2 Fatias de Presunto</p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 15,00</span>
-                    <span>R$ 12,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-misto-quente"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
+        <div id="sanduiches-categoria" class="divTitulos">
+            <h4 id="titulo-sanduiches">SANDUICHES & BURGUER'S</h4>
         </div>
-    </section>
 
-    <!-- Queijo QUENTE -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/queijo-quente.jpg">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Queijo Quente</h4>
-                <p class="descricao-produtos">Queijo Quente naquele padrão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão Assado na chapa | 3 Fatias de Queijo</p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 15,00</span>
-                    <span>R$ 12,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-queijo-quente"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AMERICANO -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/americano2.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Americano</h4>
-                <p class="descricao-produtos">Americano clássico naquele padrão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Ovo | Queijo | Presunto...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-americano">Ver mais</a> 
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 20,00</span>
-                    <span>R$ 16,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-americano"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-americano" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Ovo</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                <div class="fotolanchemodal">
-                <img class="fotosanduba"src="imagens/lanches/americano2.png">
-                </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-americano"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-            </div>
-    </section>
-
-    <!-- BAURÚ -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/bauruatt.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Baurú</h4>
-                <p class="descricao-produtos">Baurú daquele jeito</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Salsicha | Queijo | Presunto...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-bauru">Ver mais</a> 
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 20,00</span>
-                    <span>R$ 16,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-bauru"><i
-                    class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-
-            <div id="model-bauru" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Salsicha</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/bauruatt.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-bauru"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hambúrguer -->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
@@ -683,134 +433,43 @@
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">Hambúrguer</h4>
-                <p class="descricao-produtos">Hambúrguer daquele jeito</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Hambúrguer | Queijo...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-hamburguer">Ver mais</a> 
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 20,00</span>
-                    <span>R$ 17,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-hamburguer"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-hamburguer" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Hambúrguer</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/hamburgueratt.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-hamburguer"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- X-BURGUER -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/x-burguer.png">
-            </div>
-
-            <div class="card-conteudo">
                 <h4 class="titulo-produtos">X-Burguer</h4>
-                <p class="descricao-produtos">X Burguersão daquele jeito</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Hambúrguer | Queijo...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-xburguer">Ver mais</a> 
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 22,00</span>
-                    <span>R$ 18,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-xburguer"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-xburguer" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Hambúrguer</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Ovo</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/x-burguer.png">
-                    </div>
-                    <div id="botoes-produto-modal">
+                <p class="descricao-produtos">X-Burguersão super recheado.</p>
+                <p class="descricao-ingredientes">Ingredientes: Hambúrguer | Queijo | Presunto | Tomate | Molho</p>
+                    <div id="botoes-produto">
+                        <span class="preco-riscado">R$ 20,00</span>
+                        <span>R$ 15,00</span>
                         <button class="AdicionarCarrinho" data-produto-id="produto-xburguer"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                        class="fa-solid fa-cart-plus"></i> Adicionar</button>
                     </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- X-SALSICHA -->
+    <!-- PRODUTO E MODAL - X-BACON -->
+
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
                 <img class="fotosanduba"
-                    src="imagens/lanches/x-salsicha.png">
+                    src="imagens/lanches/x-bacon.png">
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">X-Salsicha</h4>
-                <p class="descricao-produtos">X Salsichão daquele jeito</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Salsicha | Hambúrguer...</p>
-                <a class="botaomodal"href="#expansao" data-model-target="#model-xsalsicha">Ver mais</a> 
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 22,00</span>
-                    <span>R$ 18,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-xsalsicha"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-xsalsicha" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Salsicha</li>
-                        <li>Hambúrguer</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/x-salsicha.png">
+                <h4 class="titulo-produtos">X-Bacon</h4>
+                <p class="descricao-produtos">X-Bacon topadão daquele jeito</p>
+                <p class="descricao-ingredientes">Ingredientes: Hambúrguer | Queijo | Presunto | Bacon | Tomate | Molho</p>
+                    <div id="botoes-produto">
+                        <span class="preco-riscado">R$ 22,00</span>
+                        <span>R$ 18,00</span>
+                        <button class="AdicionarCarrinho" data-produto-id="produto-xbacon"><i
+                        class="fa-solid fa-cart-plus"></i> Adicionar</button>
                     </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-xsalsicha"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
+    
     <!-- MINUANO -->
     <section class="item-pai">
         <div class="card-pai">
@@ -822,184 +481,18 @@
             <div class="card-conteudo">
                 <h4 class="titulo-produtos">Minuano</h4>
                 <p class="descricao-produtos">Minuano clássico naquele padrão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Ovo | Salsicha | Hambúrguer...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-minuano">Ver mais</a> 
+                <p class="descricao-ingredientes">Ingredientes: Hambúrguer | Queijo | Ovos | Tomate | Molho</p>
                 <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 24,00</span>
-                    <span>R$ 20,00</span>
+                    <span class="preco-riscado">R$ 20,00</span>
+                    <span>R$ 17,00</span>
                     <button class="AdicionarCarrinho" data-produto-id="produto-minuano"><i
                     class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
-
-
-            <div id="model-minuano" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Ovo</li>
-                        <li>Salsicha</li>
-                        <li>Hambúrguer</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/minuano1.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-minuano"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- X-BACON -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/x-bacon.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">X-Bacon</h4>
-                <p class="descricao-produtos">X-Bacon topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Bacon | Ovo | Hambúrguer...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-xbacon">Ver mais</a> 
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 28,00</span>
-                    <span>R$ 22,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-xbacon"><i
-                    class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-
-            <div id="model-xbacon" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Bacon</li>
-                        <li>Hambúrguer</li>
-                        <li>Ovo</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/x-bacon.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-xbacon"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- X-FRANGO -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/xfrango.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">X-Frango</h4>
-                <p class="descricao-produtos">X-Frango topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Frango desfiado | Catupiry...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-xfrango">Ver mais</a> 
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 26,00</span>
-                    <span>R$ 22,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-xfrango"><i
-                    class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-xfrango" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Frango Desfiado</li>
-                        <li>Catupiry</li>
-                        <li>Milho</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/xfrango.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-xfrango"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- X-CARNE DE SOL -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/carnedesolcaipira.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">X-Carne de Sol</h4>
-                <p class="descricao-produtos">X-Carne de Sol topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Carne de Sol | Catupiry...</p>
-                <a class="botaomodal" href="#expansao" data-model-target="#model-xcarnesol">Ver mais</a> 
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 26,00</span>
-                    <span>R$ 22,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-XCarneDeSol"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-
-            <div id="model-xcarnesol" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Carne de Sol Desfiada</li>
-                        <li>Catupiry</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/carnedesolcaipira.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-XCarneDeSol"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- X-CALABRESA -->
+        <!-- X-CALABRESA -->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
@@ -1010,8 +503,7 @@
             <div class="card-conteudo">
                 <h4 class="titulo-produtos">X-Calabresa</h4>
                 <p class="descricao-produtos">X-Calabresa topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Calabresa...<a class="botaomodal"
-                        href="#expansao" data-model-target="#model-xcalabresa">Ver mais</a> </p>
+                <p class="descricao-ingredientes">Ingredientes: Calabresa | Ovo | Queijo | Presunto | Molho Rosé | Salada</p>
                 <div id="botoes-produto">
                     <span class="preco-riscado">R$ 26,00</span>
                     <span>R$ 20,00</span>
@@ -1019,79 +511,36 @@
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
-
-            <div id="model-xcalabresa" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Calabresa</li>
-                        <li>Ovo</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/xcalabresa.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-xcalabresa"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- FRANGO SALADA -->
+    <!-- X-ALCATRA -->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
                 <img class="fotosanduba"
-                    src="imagens/lanches/frangosalada.png">
+                    src="imagens/lanches/Xalcatra.png">
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">Frango Salada</h4>
-                <p class="descricao-produtos">Frango Salada naquele padrão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Frango Desfiado...<a class="botaomodal"
-                        href="#expansao" data-model-target="#model-FrangoSalada">Ver mais</a> </p>
+                <h4 class="titulo-produtos">X-Alcatra</h4>
+                <p class="descricao-produtos">X-Alcatra topadão</p>
+                <p class="descricao-ingredientes">Ingredientes: Filé de Carne | Ovo | Queijo | Presunto | Bacon | Tomate | Molho</p>
                 <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 26,00</span>
-                    <span>R$ 22,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-FrangoSalada"><i
+                    <span class="preco-riscado">R$ 30,00</span>
+                    <span>R$ 27,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-xalcatra"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-FrangoSalada" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Frango Desfiado</li>
-                        <li>Hambúrguer</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/frangosalada.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-FrangoSalada"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- X-FILÉ -->
+
+
+    
+
+    <!-- X-Filé -->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
@@ -1102,130 +551,58 @@
             <div class="card-conteudo">
                 <h4 class="titulo-produtos">X-Filé</h4>
                 <p class="descricao-produtos">X-Filé topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Filé de Alcatra...<a class="botaomodal" href="#expansao" data-model-target="#model-xfile">Ver mais</a> </p>
+                <p class="descricao-ingredientes">Ingredientes: Filé de Carne | Queijo | Presunto | Tomate | Molho</p>
                 <div id="botoes-produto">
                     <span class="preco-riscado">R$ 28,00</span>
-                    <span>R$ 23,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-xfile"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-xfile" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Filé de Alcatra</li>
-                        <li>Ovo</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Ervilha</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/xfile.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-xfile"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FILÉ-BACON -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/filebacon.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Filé-Bacon</h4>
-                <p class="descricao-produtos">Filé-Bacon topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Filé de Alcatra...<a class="botaomodal"
-                        href="#expansao" data-model-target="#model-filebacon">Ver mais</a> </p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 30,00</span>
-                    <span>R$ 26,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-filebacon"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-filebacon" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Filé de Alcatra</li>
-                        <li>Bacon</li>
-                        <li>Ovo</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/filebacon.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-filebacon"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <!-- FRANGO-BRESAFRANGO-BRESA -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image">
-                <img class="fotosanduba"
-                    src="imagens/lanches/frangobresa.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Frango-Bresa</h4>
-                <p class="descricao-produtos">Frango-Bresa topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Frango Desfiado...<a class="botaomodal"
-                        href="#expansao" data-model-target="#model-frangobresa">Ver mais</a> </p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 30,00</span>
                     <span>R$ 25,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-frangobresa"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-xfile"><i
+                    class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div id="model-frangobresa" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Frango Desfiado</li>
-                        <li>Calabresa</li>
-                        <li>Ovo</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/frangobresa.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-frangobresa"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
+    <!-- X-FILÉ-ESPECIAL -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image">
+                <img class="fotosanduba"
+                    src="imagens/lanches/xfileespecial.jpg">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">X-Filé-Especial</h4>
+                <p class="descricao-produtos">X-Filé-Especial mais topadão do que tudo!</p>
+                <p class="descricao-ingredientes">Ingredientes: Filé de Carne | Queijo | Presunto | Ovos | Bacon | Calabresa |  Tomate | Molho</p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 32,00</span>
+                    <span>R$ 28,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-xfile-especial"><i
+                    class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- X-CORAÇÃO -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image">
+                <img class="fotosanduba"
+                    src="imagens/lanches/xcoracaoatt.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">X-Coração</h4>
+                <p class="descricao-produtos">X-Coração naquele padrão</p>
+                <p class="descricao-ingredientes">Ingredientes: Coração | Queijo | Presunto | Ovo | Bacon | Hambúrguer | Tomate | Molho</p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 34,00</span>
+                    <span>R$ 30,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-xcoracao"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
         </div>
@@ -1236,98 +613,119 @@
         <div class="card-pai">
             <div class="card-image">
                 <img class="fotosanduba"
-                    src="imagens/lanches/xfrango.png">
+                    src="imagens/lanches/filefrango.jpg">
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">Filé-Frango</h4>
-                <p class="descricao-produtos">Filé-Frango topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Filé de Alcatra...<a class="botaomodal"
-                        href="#expansao" data-model-target="#model-filefrango">Ver mais</a> </p>
+                <h4 class="titulo-produtos">Filé de Frango</h4>
+                <p class="descricao-produtos">Filé de Frango naquele modelo</p>
+                <p class="descricao-ingredientes">Ingredientes: Filé de Frango | Queijo | Presunto | Ovos | Tomate | Molho</p>
                 <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 30,00</span>
-                    <span>R$ 26,00</span>
+                    <span class="preco-riscado">R$ 26,00</span>
+                    <span>R$ 22,00</span>
                     <button class="AdicionarCarrinho" data-produto-id="produto-filefrango"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
-
-            <div id="model-filefrango" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Filé de Alcatra</li>
-                        <li>Frango Desfiado</li>
-                        <li>Queijo</li>
-                        <li>Presunto</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/xfrango.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-filefrango"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-        <!-- CARNE DE SOL CAIPIRA -->
+            <!-- FILÉ-FRANGO ESPECIAL -->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image">
                 <img class="fotosanduba"
-                    src="imagens/lanches/carnedesolcaipira.png">
+                    src="imagens/lanches/filefrangoespecial.jpg">
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">Carne de Sol Caipira</h4>
-                <p class="descricao-produtos">Carne de Sol Caipira topadão</p>
-                <p class="descricao-ingredientes">Ingredientes: Pão | Carne de Sol Desfiada...<a class="botaomodal"
-                        href="#expansao" data-model-target="#model-CarneDeSolCaipira">Ver mais</a> </p>
+                <h4 class="titulo-produtos">Filé de Frango Especial</h4>
+                <p class="descricao-produtos">Filé de Frango Especial Topadão</p>
+                <p class="descricao-ingredientes">Ingredientes: Filé de Frango | Queijo | Presunto | Ovos | Bacon | Hambúrguer | Tomate</p>
                 <div id="botoes-produto">
                     <span class="preco-riscado">R$ 30,00</span>
-                    <span>R$ 25,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-CarneDeSolCaipira"><i
+                    <span>R$ 27,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-filefrango-especial"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-
-            <div id="model-CarneDeSolCaipira" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-vermais">&times;</span>
-                    <h2>Detalhes do Produto</h2>
-                    <ul>
-                        <li>Pão</li>
-                        <li>Carne de Sol Desfiada</li>
-                        <li>Catupiry</li>
-                        <li>Queijo Coalho</li>
-                        <li>Milho e Ervilha</li>
-                        <li>Molho Rosé</li>
-                        <li>Salada</li>
-                    </ul>
-                    <div class="fotolanchemodal">
-                        <img class="fotosanduba"src="imagens/lanches/carnedesolcaipira.png">
-                    </div>
-                    <div id="botoes-produto-modal">
-                        <button class="AdicionarCarrinho" data-produto-id="produto-CarneDeSolCaipira"><i
-                        class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+    <!-- EGG-BACON -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image">
+                <img class="fotosanduba"
+                    src="imagens/lanches/xeggbacon.jpeg">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Egg-Bacon</h4>
+                <p class="descricao-produtos">Egg-Bacon topadão</p>
+                <p class="descricao-ingredientes">Ingredientes: Bacon | Ovo | Queijo | Presunto | Tomate | Molho</p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 26,00</span>
+                    <span>R$ 22,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-eggbacon"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+
     <!-- REFRIGERANTES LATA -->
 
-        <div class="divTitulos">
+        <div id="bebidas-categoria" class="divTitulos">
             <h4 id="titulo-bebidas">BEBIDAS</h4>
         </div>
+
+        <!-- PRODUTO E MODAL - COCA-COLA CAÇULINHA -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image-bebidas">
+                <img class="fotobebidas"
+                    src="imagens/bebidas/cocacaculinha.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Coca-Cola Caçulinha</h4>
+                <p class="descricao-produtos">Coca-Cola</p>
+                <p class="descricao-ingredientes"></p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 5,00</span>
+                    <span>R$ 4,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-cocamenor"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!-- PRODUTO E MODAL - GUARANÁ CAÇULINHA -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image-bebidas">
+                <img class="fotobebidas"
+                    src="imagens/bebidas/guaranacaculinha.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Guaraná Caçulinha</h4>
+                <p class="descricao-produtos">Guaraná</p>
+                <p class="descricao-ingredientes"></p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 5,00</span>
+                    <span>R$ 4,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-guaranamenor"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- PRODUTO E MODAL - COCA-COLA 250ML -->
     <section class="item-pai">
@@ -1343,8 +741,8 @@
                 <p class="descricao-ingredientes"></p>
                 <div id="botoes-produto">
                     <span class="preco-riscado">R$ 8,00</span>
-                    <span>R$ 6,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-cocacola250ml"><i
+                    <span>R$ 7,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-cocacolalata"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
@@ -1356,7 +754,7 @@
         <div class="card-pai">
             <div class="card-image-bebidas">
                 <img class="fotobebidas"
-                    src="imagens/bebidas/GuaranaLataATTpngSFundo.png">
+                    src="imagens/bebidas/GuaranaLataATTpng.png">
             </div>
 
             <div class="card-conteudo">
@@ -1365,8 +763,8 @@
                 <p class="descricao-ingredientes"></p>
                 <div id="botoes-produto">
                     <span class="preco-riscado">R$ 8,00</span>
-                    <span>R$ 6,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-guarana250ml"><i
+                    <span>R$ 7,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-guaranalata"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
@@ -1387,35 +785,14 @@
                 <p class="descricao-ingredientes"></p>
                 <div id="botoes-produto">
                     <span class="preco-riscado">R$ 8,00</span>
-                    <span>R$ 6,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-fanta250ml"><i
+                    <span>R$ 7,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-fantalata"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
         </div>
     </section>
 
-            <!-- PRODUTO E MODAL - SODA LATA -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image-bebidas">
-                <img class="fotobebidas"
-                    src="imagens/bebidas/sodalata.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Soda Lata</h4>
-                <p class="descricao-produtos">Soda em lata</p>
-                <p class="descricao-ingredientes"></p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 8,00</span>
-                    <span>R$ 6,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-soda250ml"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!--REFRIGERANTES 1L-->
@@ -1486,120 +863,71 @@
         </div>
     </section>
 
-            <!-- PRODUTO E MODAL - SODA 1L -->
+            <!-- PRODUTO E MODAL - AGUA MINERAL SEM GÁS-->
     <section class="item-pai">
         <div class="card-pai">
             <div class="card-image-bebidas">
                 <img class="fotobebidas"
-                    src="imagens/bebidas/soda1LA.png">
+                    src="imagens/bebidas/aguamineral.png">
             </div>
 
             <div class="card-conteudo">
-                <h4 class="titulo-produtos">Soda 1L</h4>
-                <p class="descricao-produtos">Soda 1L</p>
+                <h4 class="titulo-produtos">Água Mineral</h4>
+                <p class="descricao-produtos">Água Mineral sem gás</p>
                 <p class="descricao-ingredientes"></p>
                 <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 10,00</span>
+                    <span class="preco-riscado">R$ 4,00</span>
+                    <span>R$ 3,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-aguasemgas"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- PRODUTO E MODAL - AGUA MINERAL COM GÁS -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image-bebidas">
+                <img class="fotobebidas"
+                    src="imagens/bebidas/aguamineralgas.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">Água Mineral</h4>
+                <p class="descricao-produtos">Água Mineral com gás</p>
+                <p class="descricao-ingredientes"></p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 5,00</span>
+                    <span>R$ 4,00</span>
+                    <button class="AdicionarCarrinho" data-produto-id="produto-aguacomgas"><i
+                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- PRODUTO E MODAL - H2O -->
+    <section class="item-pai">
+        <div class="card-pai">
+            <div class="card-image-bebidas">
+                <img class="fotobebidas"
+                    src="imagens/bebidas/h20transparent.png">
+            </div>
+
+            <div class="card-conteudo">
+                <h4 class="titulo-produtos">H2O</h4>
+                <p class="descricao-produtos">H2O</p>
+                <p class="descricao-ingredientes"></p>
+                <div id="botoes-produto">
+                    <span class="preco-riscado">R$ 9,00</span>
                     <span>R$ 8,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-soda1L"><i
+                    <button class="AdicionarCarrinho" data-produto-id="produto-h2o"><i
                             class="fa-solid fa-cart-plus"></i> Adicionar</button>
                 </div>
             </div>
         </div>
     </section>
-
-        <!--REFRIGERANTES 2L-->
-
-        <!-- PRODUTO E MODAL - COCA-COLA 2L -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image-bebidas">
-                <img class="fotobebidas"
-                    src="imagens/bebidas/Coca2LA.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Coca-Cola 2L</h4>
-                <p class="descricao-produtos">Coca-Cola 2L</p>
-                <p class="descricao-ingredientes"></p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 16,00</span>
-                    <span>R$ 13,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-cocacola2L"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-            <!-- PRODUTO E MODAL - GUARANÁ 2L -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image-bebidas">
-                <img class="fotobebidas"
-                    src="imagens/bebidas/Guarana2LA.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Guaraná 2L</h4>
-                <p class="descricao-produtos">Guaraná 2L</p>
-                <p class="descricao-ingredientes"></p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 14,00</span>
-                    <span>R$ 12,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-guarana2L"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-                <!-- PRODUTO E MODAL - FANTA 2L -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image-bebidas">
-                <img class="fotobebidas"
-                    src="imagens/bebidas/Fanta2LA.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Fanta 2L</h4>
-                <p class="descricao-produtos">Fanta 2L</p>
-                <p class="descricao-ingredientes"></p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 14,00</span>
-                    <span>R$ 12,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-fanta2L"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>Fanta
-            </div>
-        </div>
-    </section>
-
-                    <!-- PRODUTO E MODAL - SODA 2L -->
-    <section class="item-pai">
-        <div class="card-pai">
-            <div class="card-image-bebidas">
-                <img class="fotobebidas"
-                    src="imagens/bebidas/soda2LA.png">
-            </div>
-
-            <div class="card-conteudo">
-                <h4 class="titulo-produtos">Soda 2L</h4>
-                <p class="descricao-produtos">Soda 2L</p>
-                <p class="descricao-ingredientes"></p>
-                <div id="botoes-produto">
-                    <span class="preco-riscado">R$ 14,00</span>
-                    <span>R$ 12,00</span>
-                    <button class="AdicionarCarrinho" data-produto-id="produto-soda2L"><i
-                            class="fa-solid fa-cart-plus"></i> Adicionar</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    
 
 
 </main>
@@ -1619,7 +947,7 @@
         </li>
 
 
-        <li class="inav"><a href="#"><i class="fa-brands fa-whatsapp"></i><span class="spanmenu">WhatsApp</span></a>
+        <li class="inav"><a id="botaozap" href="#"><i class="fa-brands fa-whatsapp"></i><span class="spanmenu">WhatsApp</span></a>
         </li>
     </ul>
 
@@ -1631,7 +959,7 @@
 <div id="ModalQRCode" class="modall">
     <div id="card-imagem-qrcode">
         <span class="close-button-qrcode">&times;</span>
-        <img class="fotoQRCODE" src="imagens/QRCodeArthurLanches.png">
+        <img class="fotoQRCODE" src="imagens/geral/qrcodesandubagaroto.png">
         
     </div>
     <p class="txtQRCODE">APONTE A CAMERA</p>
@@ -1653,34 +981,41 @@
     <div id="sugestaoBebidas">
         <div class="grupo-bebida" id="grupoCoca" style="display: flex;">  
             <h4 class="titulo-bebida-sugestao">Bebida para acompanhar?</h4>
+
+            <div class="opcao-bebida">
+                <img class="imgsugestao-cocacolamenor" src="imagens/bebidas/cocacaculinhamodal2.png" alt="">
+                <p class="psugestao">Coca-Cola Caçulinha</p>
+                <span class="spansugestao">R$ 4,00</span>
+                <button class="adicionar-bebida" data-produto-id="produto-cocamenor">Adicionar</button> 
+            </div>
+
+            <div class="opcao-bebida">
+                <img class="imgsugestao-guaranamenor" src="imagens/bebidas/guaranacaculinhamodal2.png" alt="">
+                <p class="psugestao">Guaraná Caçulinha</p>
+                <span class="spansugestao">R$ 4,00</span>
+                <button class="adicionar-bebida" data-produto-id="produto-guaranamenor">Adicionar</button> 
+            </div>
+
             <div class="opcao-bebida">
                 <img class="imgsugestao-cocacola250" src="imagens/bebidas/cocacola350ml.png" alt="">
-                <p class="psugestao">Coca-Cola 250ml</p>
-                <span class="spansugestao">R$ 6,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-cocacola250ml">Adicionar</button> 
+                <p class="psugestao">Coca-Cola Lata</p>
+                <span class="spansugestao">R$ 7,00</span>
+                <button class="adicionar-bebida" data-produto-id="produto-cocacolalata">Adicionar</button> 
             </div>
 
             <div class="opcao-bebida">
-                <img class="imgsugestao-guarana250" src="imagens/bebidas/GuaranaLataATTpngSFundo.png" alt="">
-                <p class="psugestao">Guaraná 250ml</p>
-                <span class="spansugestao">R$ 6,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-guarana250ml">Adicionar</button> 
+                <img class="imgsugestao-guarana250" src="imagens/bebidas/GuaranaLataModal2.png" alt="">
+                <p class="psugestao">Guaraná Lata</p>
+                <span class="spansugestao">R$ 7,00</span>
+                <button class="adicionar-bebida" data-produto-id="produto-guaranalata">Adicionar</button> 
             </div>
 
             <div class="opcao-bebida">
-                <img class="imgsugestao-fanta250" src="imagens/bebidas/Fantalata350ml.png" alt="">
-                <p class="psugestao">Fanta 250ml</p>
-                <span class="spansugestao">R$ 6,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-fanta250ml">Adicionar</button> 
+                <img class="imgsugestao-fanta250" src="imagens/bebidas/Fantalatamodal2.png" alt="">
+                <p class="psugestao">Fanta Lata</p>
+                <span class="spansugestao">R$ 7,00</span>
+                <button class="adicionar-bebida" data-produto-id="produto-fantalata">Adicionar</button> 
             </div>
-
-            <div class="opcao-bebida">
-                <img class="imgsugestao-soda250" src="imagens/bebidas/sodalata.png" alt="">
-                <p class="psugestao">Soda 250ml</p>
-                <span class="spansugestao">R$ 6,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-soda250ml">Adicionar</button> 
-            </div>
-
 
             <div class="opcao-bebida">
                 <img class="imgsugestao-coca1L" src="imagens/bebidas/Coca1LA.png" alt="">
@@ -1692,7 +1027,7 @@
             <div class="opcao-bebida">
                 <img class="imgsugestao-guarana1L" src="imagens/bebidas/guarana1LA.png" alt="">
                 <p class="psugestao">Guaraná 1L</p>
-                <span class="spansugestao">R$ 8,00</span>
+                <span class="spansugestao">R$ 10,00</span>
                 <button class="adicionar-bebida" data-produto-id="produto-guarana1L">Adicionar</button> 
             </div>
 
@@ -1704,38 +1039,24 @@
             </div>
 
             <div class="opcao-bebida">
-                <img class="imgsugestao-soda1L" src="imagens/bebidas/soda1LA.png" alt="">
-                <p class="psugestao">Soda 1L</p>
-                <span class="spansugestao">R$ 10,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-soda1L">Adicionar</button> 
+                <img class="imgsugestao-h20" src="imagens/bebidas/h20transparent.png" alt="">
+                <p class="psugestao">H20</p>
+                <span class="spansugestao">R$ 8,00</span>
+                <button class="adicionar-bebida" data-produto-id="produto-h2o">Adicionar</button> 
             </div>
 
             <div class="opcao-bebida">
-                <img class="imgsugestao-coca2L" src="imagens/bebidas/Coca2LA.png" alt="">
-                <p class="psugestao">Coca-Cola 2L</p>
-                <span class="spansugestao">R$ 13,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-cocacola2L">Adicionar</button>
+                <img class="imgsugestao-aguaMineral" src="imagens/bebidas/aguamineral.png" alt="">
+                <p class="psugestao">Água Mineral</p>
+                <span class="spansugestao">R$ 3,00</span>
+                <button class="adicionar-bebida" data-produto-id="produto-aguasemgas">Adicionar</button> 
             </div>
 
             <div class="opcao-bebida">
-                <img class="imgsugestao-guarana2L" src="imagens/bebidas/Guarana2LA.png" alt="">
-                <p class="psugestao">Guaraná 2L</p>
-                <span class="spansugestao">R$ 12,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-guarana2L">Adicionar</button> 
-            </div>
-
-            <div class="opcao-bebida">
-                <img class="imgsugestao-fanta2L" src="imagens/bebidas/Fanta2LA.png" alt="">
-                <p class="psugestao">Fanta 2L</p>
-                <span class="spansugestao">R$ 12,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-fanta2L">Adicionar</button> 
-            </div>
-
-            <div class="opcao-bebida">
-                <img class="imgsugestao-soda2L" src="imagens/bebidas/soda2LA.png" alt="">
-                <p class="psugestao">Soda 2L</p>
-                <span class="spansugestao">R$ 12,00</span>
-                <button class="adicionar-bebida" data-produto-id="produto-soda2L">Adicionar</button> 
+                <img class="imgsugestao-aguaGas" src="imagens/bebidas/aguamineralgas.png" alt="">
+                <p class="psugestao">Água com Gás</p>
+                <span class="spansugestao">R$ 4,00</span>
+                <button class="adicionar-bebida" data-produto-id="produto-aguacomgas">Adicionar</button> 
             </div>
         </div>
     </div>
@@ -1783,6 +1104,9 @@
                         <option value="Cruz das Almas">Cruz das Almas</option>
                         <option value="Ponta Verde">Ponta Verde</option>
                         <option value="Jatiúca">Jatiúca</option>
+                        <option value="Gruta">Gruta</option>
+                        <option value="Pajuçara">Pajuçara</option>
+                        <option value="Jaraguá">Jaraguá</option>
                     </optgroup>
                 </select>
                 <span id="erroBairro" class="mensagem-erro" style="display: none;">* Necessário Preencher</span>
@@ -1815,31 +1139,37 @@
             <p class="seuPedidoNome">Seu pedido: </p>
             <div id="itensListadosNoPedido">
             </div>
-            
+            <h4 class="h4FormaPagamentotxt">Forma de Pagamento:</h4>
             <div class="formas-pagamento">
-                <h4>Forma de Pagamento:</h4>
-                <div>
+                
+
+                <div class="controlePIX">
+                    <input type="radio" name="formaPagamento" id="Dinheiro">
+                    <label class="pagamentoDinheiro" for="pagamentoDinheiro">Dinheiro</label>
+                    
+                </div>
+
+                <div class="controlePIX">
                     <input type="radio" name="formaPagamento" id="Pix">
                     <label class="pagamentoPIX" for="pagamentoPix">PIX</label>
                 </div>
                 
-                <div>
+                <div class="controlePIX">
                     <input type="radio" name="formaPagamento" id="pagamentoCartao">
                     <label class="pagamentoCartao" for="pagamentoCartao">Cartão</label>
                 </div>
-            
-                <div id="controlePIX">
-                    <input type="radio" name="formaPagamento" id="pagamentoDinheiro">
-                    <label class="pagamentoDinheiro" for="pagamentoDinheiro">Dinheiro</label>
-                    <input type="number" name="inputTroco" id="inputTroco" placeholder="Troco para quanto? Se não precisar, deixe vazio..." style="display: none;">
-                    <label for="inputTroco"></label>
-                </div>
-                
-                <span id="ValorTotalPedidoFinal">Total: R$: </span>
             </div>
+            <div class="divTroco">
+                <input type="number" name="inputTroco" id="inputTroco" placeholder="Quanto de troco? Se não precisar, deixe vazio..." style="display: none;">
+                        <label for="inputTroco"></label>
+            </div>
+            <div class="ControleTotalEntrega">
+                    <span id="taxaEntrega">Taxa de Entrega: R$</span>
+                    <span id="ValorTotalPedidoFinal">Total: R$: </span>
+                </div>
 
             <div id="divBotoesPedido">
-                <button id="Finalizar-Pedido">Finalizar Pedido</button>
+                <button id="Finalizar-Pedido">&#128073 Finalizar Pedido</button>
             </div>
         </div>  
     </div>

@@ -1,335 +1,312 @@
 let catalogoDeProdutos = {
-    "produto-arthur-grande": { // Esta é a CHAVE, que corresponde ao seu data-produto-id
+    "produto-combopassaporte": { // Esta é a CHAVE, que corresponde ao seu data-produto-id
         tipo: "lanche",
-        nome: "Especial Arthur Grande",
-        preco: 55.00,
-        descricao: "Especial da casa, dividido em 4 pedaços e servem 4 pessoas.",
+        nome: "Combo Passaporte",
+        precoRiscado: 26.00,
+        preco: 22.00,
+        descricao: "Passaporte Acompanhado de Batata Frita + Caçulinha",
         ingredientes: [
-            "Pão Grande",
-            "Bacon",
-            "Calabresa",
-            "Frango Desfiado",
-            "Filé de Alcatra",
-            "2x Salsicha",
-            "2x Ovos",
-            "2x Hamburguer",
-            "2x Queijo",
-            "2x Presunto",
-            "Molho Rosé",
-            "Salada",
-            "Tomate"
-        ],
-        imagem: "imagens/lanches/especial4grande.png"
-    },
-
-    "produto-arthur-baby": {
-        tipo: "lanche",
-        nome: "Especial Arthur Baby",
-        preco: 40.00,
-        descricao: "Especial da casa, dividido em 2 pedaços e servem 2 pessoas.",
-        ingredientes: [
-            "Pão Grande",
-            "Bacon",
-            "Calabresa",
-            "Frango Desfiado",
-            "Filé de Alcatra",
-            "Salsicha",
-            "Ovos",
-            "Hamburguer",
-            "Queijo",
-            "Presunto",
-            "Molho Rosé",
-            "Salada",
-            "Tomate"
-        ],
-        imagem: "imagens/lanches/arthurbabyatt.png"
-    },
-
-    "produto-passaporte-carne": {
-        tipo: "lanche",
-        nome: "Passaporte de Carne",
-        preco: 17.00,
-        descricao: "Passaporte de carne super recheado",
-        ingredientes: [
-            "Pão Sedão",
             "Carne Moída",
             "Salsicha",
             "Tomate Picado Verde",
             "Milho e Ervilha",
-            "Queijo Ralado",
             "Katchup",
             "Maionese",
             "Batata Palha"
-            
         ],
-        imagem: "imagens/lanches/passaportecarne.png"
+        imagem: "imagens/combos/combopassaporte.png"
+    },
+
+    "produto-comboburgao": {
+        tipo: "lanche",
+        nome: "Combo Burgão",
+        precoRiscado: 26.00,
+        preco: 20.00,
+        descricao: "X-Burguer Acompanhado de Batata Frita + Caçulinha",
+        ingredientes: [
+        "Hambúrguer",
+        "Queijo",
+        "Presunto",
+        "Tomate",
+        "Molho"
+        ],
+        imagem: "imagens/combos/comboburgao.png"
+    },
+
+    "produto-combofilezao": {
+        tipo: "lanche",
+        nome: "Combo FiléZão",
+        precoRiscado: 32.00,
+        preco: 27.00,
+        descricao: "X FiléZão Acompanhado de Batata Frita + Caçulinha",
+        ingredientes: [
+        "Filé de Alcatra",
+        "Queijo",
+        "Presunto",
+        "Tomate",
+        "Molho",
+        ],
+        imagem: "imagens/combos/combofile.png"
+    },
+
+    "produto-filezaofrango": {
+        tipo: "lanche",
+        nome: "Combo FiléZão de Frango",
+        precoRiscado: 30.00,
+        preco: 18.00,
+        descricao: "FiléZão de Frango Acompanhado de Batata Frita + Caçulinha",
+        ingredientes: [
+            "Filé de Frango",
+            "Tomate Picado Verde",
+            "Queijo",
+            "Presunto",
+            "Molho",
+        ],
+        imagem: "imagens/combos/combofiledefrango.png"
+    },
+
+    "produto-combo-segundafeira": {
+        tipo: "lanche",
+        nome: "Segunda-Feira",
+        precoRiscado: 29.00,
+        preco: 26.00,
+        descricao: "Delecioso Passaporte + Caçulinha",
+        ingredientes: [
+            "Carne Moída",
+            "Salsicha",
+            "Tomate Picado Verde",
+            "Milho e Ervilha",
+            "Katchup",
+            "Maionese",
+            "Batata Palha"
+        ],
+        imagem: "imagens/combos/combosegunda.png"
+    },
+
+
+    "produto-combo-tercafeira": {
+        tipo: "lanche",
+        nome: "Terça-Feira",
+        precoRiscado: 25.00,
+        preco: 19.00,
+        descricao: "X-Burguer + Caçulinha",
+        ingredientes: [ 
+        "Hambúrguer",
+        "Queijo",
+        "Presunto",
+        "Ovo",
+        "Tomea",
+        "Molho"
+        ],
+        imagem: "imagens/combos/combotercafeira.png"
+    },
+
+    "produto-combo-quartafeira": {
+      tipo: "lanche",
+      nome: "Quarta-Feira",
+      precoRiscado: 26.00,
+      preco: 22.00,
+      descricao: "Filé de Carne + Caçulinha",
+      ingredientes: [
+        "Filé de Alcatra",
+        "Queijo",
+        "Presunto",
+        "Tomate",
+        "Molho",
+      ],
+      imagem: "imagens/combos/comboquarta.png"
+    },
+
+    "produto-combo-quintafeira": {
+      tipo: "lanche",
+      nome: "Quinta-Feira",
+      precoRiscado: 25.00,
+      preco: 20.00,
+      descricao: "Filé de Frango + Caçulinha",
+      ingredientes: [
+            "Filé de Frango",
+            "Tomate Picado Verde",
+            "Queijo",
+            "Presunto",
+            "Molho",
+      ],
+      imagem: "imagens/combos/comboquinta.png"
+    },
+
+    "produto-garotoVIP": {
+      tipo: "lanche",
+      nome: "Garoto VIP",
+      precoRiscado: 37.00,
+      preco: 33.00,
+      descricao: "Garoto VIP naquele modelo",
+      ingredientes: [
+        "Queijo",
+        "Presunto",
+        "Filé de Frango",
+        "Filé de Alcatra",
+        "Bacon",
+        "Ovo",
+        "Hambúrguer",
+        "Tomate",
+        "Molho"
+      ],
+      imagem: "imagens/lanches/arthurbabyatt.png"
+    },
+
+    "produto-garotoVIPEspecial": {
+      tipo: "lanche",
+      nome: "Garoto VIP Especial",
+      precoRiscado: 40.00,
+      preco: 36.00,
+      descricao: "Queijo Quente naquele padrão",
+      ingredientes: [
+        "Queijo",
+        "Presunto",
+        "Filé de Frango",
+        "Filé de Alcatra",
+        "Bacon",
+        "2x Ovos",
+        "2x Hambúrguer's",
+        "Tomate",
+        "Molho"
+      ],
+      imagem: "imagens/lanches/especial4grande.png"
+    },
+
+    "produto-passaporte-carne": {
+      tipo: "lanche",
+      nome: "Passaporte de Carne",
+      precoRiscado: 20.00,
+      preco: 17.00,
+      descricao: "Passaporte de carne super recheado",
+      ingredientes: [ 
+            "Carne Moída",
+            "Salsicha",
+            "Tomate",
+            "Batata Palha"
+      ],
+      imagem: "imagens/lanches/passaportecarnealternativo.png"
     },
 
     "produto-passaporte-frango": {
-        tipo: "lanche",
-        nome: "Passaporte de Frango",
-        preco: 18.00,
-        descricao: "Passaporte de frango super recheado",
-        ingredientes: [
-            "Pão Sedão",
+      tipo: "lanche",
+      nome: "Passaporte de Frango recheadão",
+      precoRiscado: 24.00,
+      preco: 19.00,
+      descricao: "Baurú daquele jeito",
+      ingredientes: [
             "Frango Desfiado",
             "Salsicha",
-            "Tomate Picado Verde",
-            "Milho e Ervilha",
-            "Queijo Ralado",
-            "Katchup",
-            "Maionese",
+            "Tomate",
             "Batata Palha"
-        ],
-        imagem: "imagens/lanches/passaportefrango.png"
-    },
-
-    "produto-xbacon": {
-        tipo: "lanche",
-        nome: "X-Bacon",
-        preco: 22.00,
-        descricao: "X-Bacon topadão.",
-        ingredientes: [
-            "Pão",
-            "Bacon",
-            "Hambúrguer",
-            "Ovo",
-            "Queijo",
-            "Presunto",
-            "Molho Rosé",
-            "Salada"
-        ],
-        imagem: "imagens/lanches/x-bacon.png"
-    },
-
-
-    "produto-passaporte-carnesol": {
-        tipo: "lanche",
-        nome: "Passaporte de Carne de Sol",
-        preco: 25.00,
-        descricao: "Passaporte de Carne de Sol super recheado",
-        ingredientes: [ 
-            "Pão Sedão",
-            "Carne de Sol",
-            "Catupiry",
-            "Queijo Coalho",
-            "Salsicha",
-            "Tomate Picado Verde",
-            "Milho e Ervilha",
-            "Queijo Ralado",
-            "Ketchup",
-            "Maionese",
-            "Batata Palha",
-        ],
-        imagem: "imagens/lanches/passaportecarnesol.png"
+    ],
+      imagem: "imagens/lanches/passaportefrangoalternativo.png"
     },
 
     "produto-passaporte-misto": {
       tipo: "lanche",
       nome: "Passaporte de Misto",
-      preco: 24.00,
-      descricao: "Passaporte de Misto super recheado",
+      precoRiscado: 26.00,
+      preco: 21.00,
+      descricao: "Passaporte de Misto topado daquele jeito",
       ingredientes: [
-        "Pão Sedão",
-        "Carne Moída",
-        "Frango Desfiado",
-        "Salsicha",
-        "Tomate Picado Verde",
-        "Milho e Ervilha",
-        "Queijo Ralado",
-        "Kettchup",
-        "Maionese",
-        "Batata Palha",
-      ],
-      imagem: "imagens/lanches/passaportemisto.png"
-    },
-
-    "produto-xtudo": {
-      tipo: "lanche",
-      nome: "X-Tudo",
-      preco: 34.00,
-      descricao: "X-Tudo Super recheado. Serve 2 pessoas.",
-      ingredientes: [
-        "Pão Grande",
-        "Bacon",
-        "Calabresa",
-        "Frango Desfiado",
-        "Salsicha",
-        "Ovo",
-        "Hamburguer",
-        "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada"
-      ],
-      imagem: "imagens/lanches/x-tudo.jpg"
-    },
-
-    "produto-misto-quente": {
-      tipo: "lanche",
-      nome: "Misto Quente",
-      preco: 12.00,
-      descricao: "Misto Quente naquele modelo",
-      ingredientes: [
-        "Pão Assado na chapa",
-        "2 Fatias de Queijo",
-        "2 Fatias de Presunto"
-      ],
-      imagem: "imagens/lanches/mistoquente.png"
-    },
-
-    "produto-queijo-quente": {
-      tipo: "lanche",
-      nome: "Queijo Quente",
-      preco: 12.00,
-      descricao: "Queijo Quente naquele padrão",
-      ingredientes: [
-        "Pão Assado na chapa",
-        "3 Fatias de Queijo"
-      ],
-      imagem: "imagens/lanches/queijo-quente.jpg"
-    },
-
-    "produto-americano": {
-      tipo: "lanche",
-      nome: "Americano",
-      preco: 16.00,
-      descricao: "Americano clássico naquele padrão",
-      ingredientes: [ 
-        "Pão",
-        "Ovo",
-        "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada"
-      ],
-      imagem: "imagens/lanches/americano2.png"
-    },
-
-    "produto-bauru": {
-      tipo: "lanche",
-      nome: "Baurú",
-      preco: 16.00,
-      descricao: "Baurú daquele jeito",
-      ingredientes: [
-        "Pão",
-        "Salsicha",
-        "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada",
+            "Carne Moída",
+            "Frango Desfiado",
+            "Salsicha",
+            "Tomate",
+            "Batata Palha"
     ],
-      imagem: "imagens/lanches/bauruatt.png"
+      imagem: "imagens/lanches/sanduichemistoalternativo.png"
     },
 
-    "produto-hamburguer": {
+    "produto-passaporte-bacon": {
       tipo: "lanche",
-      nome: "Hambúrguer",
-      preco: 17.00,
-      descricao: "Hambúrguer daquele jeito",
+      nome: "Passaporte de Bacon",
+      precoRiscado: 26.00,
+      preco: 21.00,
+      descricao: "Passaporte de Bacon topado demais",
       ingredientes: [
-        "Pão",
-        "Hambúrguer",
-        "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada"
+            "Carne Moída ou Frango Desfiado",
+            "Bacon",
+            "Tomate",
+            "Batata Palha"
     ],
-      imagem: "imagens/lanches/hamburgueratt.png"
+      imagem: "imagens/lanches/passaportebaconatt.png"
+    },
+
+    "produto-passaporte-calabresa": {
+      tipo: "lanche",
+      nome: "Passaporte de Calabresa",
+      precoRiscado: 26.00,
+      preco: 21.00,
+      descricao: "Passaporte de Calabresa super recheado",
+      ingredientes: [
+            "Frango Desfiado",
+            "Calabresa",
+            "Milho e Ervilha",
+            "Tomate",
+            "Batata Palha"
+    ],
+      imagem: "imagens/lanches/passaportecalabresaalternativo.png"
     },
 
     "produto-xburguer": {
-      tipo: "lanche",
-      nome: "X-Burguer",
-      preco: 18.00,
-      descricao: "X Burguersão daquele jeito",
-      ingredientes: [
-        "Pão",
+        tipo: "lanche",
+        nome: "X-Burguer",
+        precoRiscado: 20.00,
+        preco: 15.00,
+        descricao: "X-Burguersão super recheado.",
+        ingredientes: [
         "Hambúrguer",
         "Queijo",
         "Presunto",
-        "Ovo",
-        "Molho Rosé",
-        "Salada"
-    ],
-      imagem: "imagens/lanches/x-burguer.png"
+        "Tomate",
+        "Molho"
+        ],
+        imagem: "imagens/lanches/hamburgueratt.png"
     },
 
-    "produto-xsalsicha": {
+    "produto-xbacon": {
       tipo: "lanche",
-      nome: "X-Salsicha",
+      nome: "X-Bacon",
+      precoRiscado: 22.00,
       preco: 18.00,
-      descricao: "X Salsichão daquele jeito",
+      descricao: "X-Bacon topadão daquele jeito",
       ingredientes: [
-        "Pão",
-        "Salsicha",
         "Hambúrguer",
         "Queijo",
         "Presunto",
-        "Molho Rosé",
-        "Salada"
-    ],
-      imagem: "imagens/lanches/x-salsicha.png"
+        "Bacon",
+        "Tomate",
+        "Molho"
+      ],
+      imagem: "imagens/lanches/x-bacon.png"
     },
 
     "produto-minuano": {
       tipo: "lanche",
       nome: "Minuano",
-      preco: 20.00,
+      precoRiscado: 20.00,
+      preco: 17.00,
       descricao: "Minuano clássico naquele padrão",
       ingredientes: [
-        "Pão",
+        "Hambúrguer",
         "Ovo",
-        "Salsicha",
         "Hambúrguer",
         "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada"
+        "Tomate",
+        "Molho"
     ],
       imagem: "imagens/lanches/minuano1.png"
     },
 
-    "produto-xfrango": {
-      tipo: "lanche",
-      nome: "X-Frango",
-      preco: 22.00,
-      descricao: "X-Frango topadão",
-      ingredientes: [
-        "Pão",
-        "Frango Desfiado",
-        "Catupiry",
-        "Milho",
-        "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada"
-    ],
-      imagem: "imagens/lanches/xfrango.png"
-    },
-
-    "produto-XCarneDeSol": {
-      tipo: "lanche",
-      nome: "X-Carne de Sol",
-      preco: 22.00,
-      descricao: "X-Carne de Sol topadão",
-      ingredientes: [
-        "Pão",
-        "Carne de Sol Desfiada",
-        "Catupiry",
-        "Queijo",
-        "Presunto"
-    ],
-      imagem: "imagens/lanches/carnedesolcaipira.png"
-    },
-
-    "produto-xcalabresa": {
+        "produto-xcalabresa": {
       tipo: "lanche",
       nome: "X-Calabresa",
+      precoRiscado: 26.00,
       preco: 20.00,
       descricao: "X-Calabresa topadão",
       ingredientes: [
-        "Pão",
         "Calabresa",
         "Ovo",
         "Queijo",
@@ -340,139 +317,213 @@ let catalogoDeProdutos = {
       imagem: "imagens/lanches/xcalabresa.png"
     },
 
-    "produto-FrangoSalada": {
+    "produto-xalcatra": {
       tipo: "lanche",
-      nome: "Frango Salada",
-      preco: 22.00,
-      descricao: "Frango Salada naquele padrão",
+      nome: "X-Alcatra",
+      precoRiscado: 30.00,
+      preco: 27.00,
+      descricao: "X-Alcatra topadão",
       ingredientes: [
-        "Pão",
-        "Frango Desfiado",
-        "Hambúrguer",
-        "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada"
-      ],
-      imagem: "imagens/lanches/frangosalada.png"
-    },
-
-    "produto-xfile": {
-      tipo: "lanche",
-      nome: "X-Filé",
-      preco: 23.00,
-      descricao: "X-Filé topadão",
-      ingredientes: [
-        "Pão",
-        "Filé de Alcatra",
+        "Filé de Carne",
         "Ovo",
         "Queijo",
         "Presunto",
-        "Ervilha",
-        "Molho Rosé",
-        "Salada"
+        "Bacon",
+        "Tomate",
+        "Molho",
+    ],
+      imagem: "imagens/lanches/Xalcatra.png"
+    },
+
+      "produto-xfile": {
+      tipo: "lanche",
+      nome: "X-Filé",
+      precoRiscado: 28.00,
+      preco: 25.00,
+      descricao: "X-Filé topadão",
+      ingredientes: [
+        "Filé de Carne",
+        "Queijo",
+        "Presunto",
+        "Tomate",
+        "Molho"
       ],
       imagem: "imagens/lanches/xfile.png"
     },
 
-    "produto-filebacon": {
+      "produto-xfile-especial": {
       tipo: "lanche",
-      nome: "Filé Bacon",
-      preco: 26.00,
-      descricao: "Filé-Bacon topadão",
+      nome: "X-Filé",
+      precoRiscado: 32.00,
+      preco: 28.00,
+      descricao: "X-Filé topadão",
       ingredientes: [
-        "Pão",
-        "Filé de Alcatra",
+        "Filé de Carne",
+        "Ovo",
+        "Queijo",
+        "Presunto",
+        "Bacon",
+        "Calabresa",
+        "Tomate",
+        "Molho"
+      ],
+      imagem: "imagens/lanches/xfileespecial.jpg"
+    },
+
+      "produto-xcoracao": {
+      tipo: "lanche",
+      nome: "X-Coração",
+      precoRiscado: 34.00,
+      preco: 30.00,
+      descricao: "X-Coração naquele padrão",
+      ingredientes: [
+        "Coração",
+        "Ovo",
+        "Queijo",
+        "Presunto",
+        "Bacon",
+        "Hambúrguer",
+        "Tomate",
+        "Molho"
+      ],
+      imagem: "imagens/lanches/xcoracaoatt.png"
+    },
+
+      "produto-filefrango": {
+      tipo: "lanche",
+      nome: "Filé de Frango",
+      precoRiscado: 26.00,
+      preco: 22.00,
+      descricao: "Filé-Frango topadão",
+      ingredientes: [
+        "Filé de Frango",
+        "Queijo",
+        "Presunto",
+        "Ovos",
+        "Molho",
+        "Tomate"
+      ],
+      imagem: "imagens/lanches/filefrango.jpg"
+    },
+
+      "produto-filefrango-especial": {
+      tipo: "lanche",
+      nome: "Filé de Frango Especial",
+      precoRiscado: 30.00,
+      preco: 27.00,
+      descricao: "Filé-Frango Especial topadão",
+      ingredientes: [
+        "Filé de Frango",
+        "Queijo",
+        "Presunto",
+        "Ovos",
+        "Bacon",
+        "Hambúrguer",
+        "Molho",
+        "Tomate"
+      ],
+      imagem: "imagens/lanches/filefrangoespecial.jpg"
+    },
+
+
+
+    "produto-eggbacon": {
+      tipo: "lanche",
+      nome: "Egg-Bacon",
+      precoRiscado: 26.00,
+      preco: 22.00,
+      descricao: "Egg-Bacon topadão",
+      ingredientes: [
         "Bacon",
         "Ovo",
         "Queijo",
         "Presunto",
-        "Molho Rosé",
-        "Salada"
+        "Molho",
+        "Tomate"
       ],
-      imagem: "imagens/lanches/filebacon.png"
+      imagem: "imagens/lanches/xeggbacon.jpeg"
     },
 
-    "produto-frangobresa": {
-      tipo: "lanche",
-      nome: "Frango-Bresa",
-      preco: 25.00,
-      descricao: "Frango-Bresa topadão",
-      ingredientes: [
-        "Pão",
-        "Frango Desfiado",
-        "Calabresa",
-        "Ovo",
-        "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada"
-      ],
-      imagem: "imagens/lanches/frangobresa.png"
+
+
+        "produto-aguasemgas": {
+        tipo: "bebida",
+        nome: "Água Mineral" ,
+        precoRiscado: 4.00,
+        preco: 3.00 ,
+        descricao: "Água Mineral sem gás",
+        imagem: "imagens/bebidas/aguamineralgas.png"
     },
 
-    "produto-filefrango": {
-      tipo: "lanche",
-      nome: "Filé-Frango",
-      preco: 26.00,
-      descricao: "Filé-Frango topadão",
-      ingredientes: [
-        "Pão.",
-        "Filé de Alcatra",
-        "Frango Desfiado",
-        "Queijo",
-        "Presunto",
-        "Molho Rosé",
-        "Salada"
-      ],
-      imagem: "imagens/lanches/xfrango.png"
+        "produto-aguacomgas": {
+        tipo: "bebida",
+        nome: "Água Mineral" ,
+        precoRiscado: 5.00,
+        preco: 4.00 ,
+        descricao: "Água Mineral com gás",
+        imagem: "imagens/bebidas/aguamineralgas.png"
     },
 
-    "produto-CarneDeSolCaipira": {
-      tipo: "lanche",
-      nome: "Carne de Sol Caipira",
-      preco: 25.00,
-      descricao: "Carne de Sol Caipira topadão",
-      ingredientes: [
-        "Pão",
-        "Carne de Sol Desfiada",
-        "Catupiry",
-        "Queijo Coalho",
-        "Milho e Ervilha",
-        "Molho Rosé",
-        "Salada"
-      ],
-      imagem: "imagens/lanches/carnedesolcaipira.png"
+        "produto-h2o": {
+        tipo: "bebida",
+        nome: "H2O" ,
+        precoRiscado: 10.00,
+        preco: 8.00 ,
+        descricao: "H2O",
+        imagem: "imagens/bebidas/h20transparent.png"
+    },
+    
+        "produto-cocamenor": {
+        tipo: "bebida",
+        nome: "Coca-Cola Caçulinha" ,
+        precoRiscado: 5.00,
+        preco: 4.00 ,
+        descricao: "Coca-Cola Caçulinha",
+        imagem: "imagens/bebidas/cocacaculinhamodal2.png"
     },
 
-    "produto-cocacola250ml": {
+        "produto-guaranamenor": {
+        tipo: "bebida",
+        nome: "Guaraná Caçulinha" ,
+        precoRiscado: 5.00,
+        preco: 4.00 ,
+        descricao: "Guaraná Caçulinha",
+        imagem: "imagens/bebidas/guaranacaculinhamodal2.png"
+    },
+
+
+    "produto-cocacolalata": {
         tipo: "bebida",
         nome: "Coca-Cola em lata" ,
-        preco: 6.00 ,
+        precoRiscado: 9.00,
+        preco: 7.00 ,
         descricao: "Coca-Cola em lata de 250 ml",
         imagem: "imagens/bebidas/cocacola350ml.png"
     },
 
-    "produto-guarana250ml": {
+    "produto-guaranalata": {
       tipo: "bebida",
       nome: "Guaraná em lata",
-      preco: 6.00,
+      precoRiscado: 8.00,
+      preco: 7.00,
       descricao: "Guanará em lata de 250 ml",
-      imagem: "imagens/bebidas/GuaranaLataATTpngSFundo.png"
+      imagem: "imagens/bebidas/GuaranaLataATTpng.png"
     },
 
-    "produto-fanta250ml": {
+    "produto-fantalata": {
       tipo: "bebida",
       nome: "Fanta 250ml",
-      preco: 6.00,
+      precoRiscado: 8.00,
+      preco: 7.00,
       descricao: "Fanta em lata",
       imagem: "imagens/bebidas/Fantalata350ml.png"
     },
 
-    "produto-soda250ml": {
+    "produto-sodalata": {
       tipo: "bebida",
       nome: "Soda 250ml",
-      preco: 6.00,
+      precoRiscado: 8.00,
+      preco: 7.00,
       descricao: "Soda em lata",
       imagem: "imagens/bebidas/sodalata.png"
     },
@@ -480,6 +531,7 @@ let catalogoDeProdutos = {
     "produto-cocacola1L": {
       tipo: "bebida",
       nome: "Coca-Cola 1L",
+      precoRiscado: 12.00,
       preco: 10.00,
       descricao: "Coca-Cola 1L",
       imagem: "imagens/bebidas/Coca1LA.png"
@@ -488,7 +540,8 @@ let catalogoDeProdutos = {
     "produto-guarana1L": {
       tipo: "bebida",
       nome: "Guaraná 1L",
-      preco: 8.00,
+      precoRiscado: 12.00,
+      preco: 10.00,
       descricao: "Guaraná 1L",
       imagem: "imagens/bebidas/guarana1LA.png"
     },
@@ -496,7 +549,8 @@ let catalogoDeProdutos = {
     "produto-fanta1L": {
       tipo: "bebida",
       nome: "Fanta 1L",
-      preco: 8.00,
+      precoRiscado: 11.00,
+      preco: 10.00,
       descricao: "Fanta 1L",
       imagem: "imagens/bebidas/fanta1LA.png"
     },
@@ -504,43 +558,27 @@ let catalogoDeProdutos = {
     "produto-soda1L": {
       tipo: "bebida",
       nome: "Soda 1L",
-      preco: 8.00,
+      precoRiscado: 11.00,
+      preco: 10.00,
       descricao: "Soda 1L",
       imagem: "imagens/bebidas/soda1LA.png"
     },
 
-    "produto-cocacola2L": {
-      tipo: "bebida",
-      nome: "Coca-Cola 2L",
-      preco: 13.00,
-      descricao: "Coca-Cola 2L",
-      imagem: "imagens/bebidas/Coca2LA.png"
-    },
+}
 
-    "produto-guarana2L": {
-      tipo: "bebida",
-      nome: "Guaraná 2L",
-      preco: 12.00,
-      descricao: "Guaraná 2L",
-      imagem: "imagens/bebidas/Guarana2LA.png"
-    },
-
-    "produto-fanta2L": {
-      tipo: "bebida",
-      nome: "Fanta 2L",
-      preco: 12.00,
-      descricao: "Fanta 2L",
-      imagem: "imagens/bebidas/Fanta2LA.png"
-    },
-
-    "produto-soda2L": {
-      tipo: "bebida",
-      nome: "Soda 2L",
-      preco: 12.00,
-      descricao: "Soda 2L",
-      imagem: "imagens/bebidas/soda2LA.png"
-    }
-
+const precosEntrega = {
+  "Feitosa": 3,
+  "Farol": 8,
+  "Jacintinho": 3,
+  "Peixoto": 3,
+  "Barro Duro": 4,
+  "Serraria": 8,
+  "Cruz das Almas": 6,
+  "Ponta Verde": 10,
+  "Jatiúca": 9,
+  "Gruta": 9,
+  "Pajuçara": 12,
+  "Jaraguá": 13
 }
 
 
@@ -1218,11 +1256,19 @@ let scrollPosition = 0
 
     }
 
+    // FUNÇÃO VALOR DE TAXA DE ENTREGA
 
+
+    
+    let taxaEntrega = document.getElementById('taxaEntrega')
     let divModalConteudo = document.querySelector('.ContModalFazerPedido')
 
+
+
     function abrirModalPedidoEListarItens() {
-          
+
+        
+            
         // 1. Salva a posição de rolagem e "congela" a página ANTES de abrir
         scrollPosition = window.scrollY;
         document.body.style.position = 'fixed';
@@ -1232,18 +1278,21 @@ let scrollPosition = 0
 
           exibirModalDados.style.display = 'none'
           exibirModalPedido.style.display = 'block'
-          divItensListaPedido.textContent = ``
+          divItensListaPedido.innerHTML = '';
           precoItens = 0
+
+          const bairroSelecionado = document.getElementById('Bairro').value;
+          valorTaxaDeEntrega = precosEntrega[bairroSelecionado] || 0;
+
 
         itensCarrinho.forEach(function(item) {
 
+        
         let divControleItemIndividual = document.createElement('div');
+        divControleItemIndividual.classList.add('divControleItemIndividual')
 
         if (item.produto.tipo === 'lanche') {
         
-        divControleItemIndividual.classList.add('divControleItemIndividual')
-        
-
         let addPedido = document.createElement('li')
         addPedido.textContent = `Item: ${item.quantidade}x ${item.produto.nome} `;
         divControleItemIndividual.appendChild(addPedido)
@@ -1264,7 +1313,7 @@ let scrollPosition = 0
         addPreco.classList.add('precoFazerPedido')
         divControleItemIndividual.appendChild(addPreco)
         
-        divItensListaPedido.appendChild(divControleItemIndividual)
+        
         
         
 
@@ -1285,19 +1334,26 @@ let scrollPosition = 0
           divControleItemIndividual.appendChild(addPreco)
 
 
-          divControleItemIndividual.classList.add('divControleItemIndividual');
-          divItensListaPedido.appendChild(divControleItemIndividual)
+          
+          
         }
-
+        
         precoItens += item.produto.preco * item.quantidade
+          
+        divItensListaPedido.appendChild(divControleItemIndividual)
 
-      })
+      });
 
-      totalPreco.textContent = `Preço Total: R$ ${precoItens.toFixed(2).replace('.', ',')}`
-      
-      
-      
-    }
+        const precoFinal = precoItens + valorTaxaDeEntrega
+
+        totalPreco.textContent = `Preço Total: R$ ${precoFinal.toFixed(2).replace('.', ',')}`
+
+        taxaEntrega.textContent = `Taxa de Entrega: R$ ${valorTaxaDeEntrega.toFixed(2).replace('.', ',')}`
+
+    };
+
+        
+
 
     const btnVoltarPedido = document.getElementById('voltarPedido')
         btnVoltarPedido.addEventListener('click', function() {
@@ -1378,17 +1434,17 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
     .then(res => res.json())
     .then(data => {
         console.log(data.mensagem);
-        //alert('Pedido enviado para impressão!');
     })
     .catch(err => console.error('Erro ao enviar pedido:', err));
 
     // --- 7. Monta mensagem para WhatsApp ---
-    let mensagemWhatsApp = '*-- NOVO PEDIDO - ARTHUR LANCHES --*\n\n';
+    let mensagemWhatsApp = '*-- NOVO PEDIDO - SANDUBA DO GAROTO --*\n\n';
     mensagemWhatsApp += '*Dados do Cliente:*\n';
     mensagemWhatsApp += `Nome: ${nomeCliente}\n`;
     mensagemWhatsApp += `Telefone: ${telefoneCliente}\n`;
     mensagemWhatsApp += `Tipo de Pedido: ${tipoPedido === 'Entrega' ? 'Entrega' : 'Retirada'}\n`;
 
+    // Adiciona o endereço se o tipo de pedido for 'Entrega'
     if (tipoPedido === 'Entrega') {
         mensagemWhatsApp += '\n*Endereço de Entrega:*\n';
         mensagemWhatsApp += `Bairro: ${endereco.bairro}\n`;
@@ -1398,11 +1454,11 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
     }
 
     mensagemWhatsApp += '\n*Itens do Pedido:*\n';
-    let totalFinalParaWhatsApp = 0;
+    let totalFinalParaWhatsApp = 0; // Inicializa a variável aqui
     if (itensCarrinho.length > 0) {
         itensCarrinho.forEach((item, index) => {
             let linhaItem = `${index + 1}. ${item.quantidade}x ${item.produto.nome} (R$ ${(item.produto.preco * item.quantidade).toFixed(2).replace('.', ',')})`;
-            if (item.observacao && item.observacao.trim() !== '') linhaItem += `\n  - Observação: ${item.observacao}`;
+            if (item.observacao && item.observacao.trim() !== '') linhaItem += `\n  - Observação: ${item.observacao}`;
             mensagemWhatsApp += linhaItem + '\n';
             totalFinalParaWhatsApp += item.produto.preco * item.quantidade;
         });
@@ -1410,15 +1466,24 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
         mensagemWhatsApp += 'Nenhum item adicionado ao carrinho.\n';
     }
 
+    // Adiciona a taxa de entrega e calcula o total APÓS o loop
+    if (tipoPedido === 'Entrega') {
+        totalFinalParaWhatsApp += valorTaxaDeEntrega;
+        mensagemWhatsApp += `\nTaxa de Entrega: R$ ${valorTaxaDeEntrega.toFixed(2).replace('.', ',')}\n`;
+    }
+
     mensagemWhatsApp += `\n*Total do Pedido: R$ ${totalFinalParaWhatsApp.toFixed(2).replace('.', ',')}*\n`;
     mensagemWhatsApp += '\n*Informações de Pagamento:*\n';
     mensagemWhatsApp += `Forma de Pagamento: ${textoFormaPagamento}\n`;
-    mensagemWhatsApp += (textoFormaPagamento === 'Dinheiro' && valorTroco > 0) 
-        ? `Precisa de troco para: R$ ${valorTroco.toFixed(2).replace('.', ',')}\n` 
-        : 'Não precisa de troco.\n';
+    // Lógica para o troco: usa o valor digitado diretamente
+if (textoFormaPagamento === 'Dinheiro' && valorTroco > 0) {
+    mensagemWhatsApp += `: | Precisa de R$ ${valorTroco.toFixed(2).replace('.', ',')} de troco. \n`;
+} else {
+    mensagemWhatsApp += 'Não precisa de troco.\n';
+}
 
     // --- 8. Envia mensagem para WhatsApp ---
-    const numeroWhatsApp = '5582999261614';
+    const numeroWhatsApp = '5582987165196';
     const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemWhatsApp)}`;
     window.open(linkWhatsApp, '_blank');
 
@@ -1426,7 +1491,6 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
     document.querySelector('#ModalFazerPedido').style.display = 'none';
     document.body.style.overflow = 'auto';
 });
-
 
 
 
@@ -1485,6 +1549,7 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
             novoP.textContent = 'Estamos funcionando!'
             openClose.appendChild(novoP)
 
+
         } else {
 
             let p2 = document.createElement('p')
@@ -1506,14 +1571,17 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
             divFuncionamento.appendChild(p3)
 
             let p4 = document.createElement('p')
-            p4.textContent = '<- Visualizar os dias'
+            p4.textContent = '👈 Visualizar os dias'
             p4.classList.add('msgverhorarios')
             divFuncionamento.appendChild(p4)
 
-
+            let btnEntregaTaxa = document.querySelector('.btnEntrega')
+            btnEntregaTaxa.style.display = 'none'
 
             p3.addEventListener('click', function() {
             modalhorarios.style.display = 'block'
+
+            
         })
         }
 
@@ -1527,30 +1595,53 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
     
     }
 
+
+
     exibirOpenClose();
 
-    let opcaoDinheiro = document.getElementById('pagamentoDinheiro')
+
+
+    let ModalEntrega = document.querySelector('#modalTaxaEntrega')
+    let btnEntregaTaxa = document.querySelector('.btnEntrega')
+    btnEntregaTaxa.addEventListener('click', function() {
+        ModalEntrega.style.display = 'block'
+    })
+
+    let btnfecharModalEntrega = document.querySelector('.close-button-taxas')
+
+    btnfecharModalEntrega.addEventListener('click', function() {
+      ModalEntrega.style.display = 'none'
+    })
+
+
+
+
+    let opcaoDinheiro = document.getElementById('Dinheiro')
     let divPIX = document.getElementById('controlePIX')
     let opcaoPIX = document.getElementById('Pix')
     let opcaoCartao = document.getElementById('pagamentoCartao')
     let opcaoTroco = document.getElementById('inputTroco')
+    let divformadePagamento = document.querySelector('.formas-pagamento')
 
     // Evento clique em dinheiro liberar opção troco.
     opcaoDinheiro.addEventListener('click', function () {
-      opcaoTroco.style.display = 'block'
+      opcaoTroco.style.display = 'flex'
+      divformadePagamento.style.marginBottom = '35px'
+
     })
 
     opcaoPIX.addEventListener('click', function() {
       opcaoTroco.style.display = 'none'
+      divformadePagamento.style.marginBottom = ''
     })
 
     opcaoCartao.addEventListener('click', function() {
       opcaoTroco.style.display = 'none'
+      divformadePagamento.style.marginBottom = ''
     })
 
-    // EVENTO BOTÃO OUTRAS OPÇÕES DE BEBIDAS
 
-
+    // BOTÃO QRCODE
 
     let qrcode = document.getElementById('qrcode')
     let modalQRCode = document.getElementById('ModalQRCode')
@@ -1566,23 +1657,36 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
       modalQRCode.style.display = 'none'
     })
 
+    // BOTÃO ZAP
+
+    let btnZap = document.getElementById('botaozap')
+    btnZap.addEventListener('click', function() {
+
+    const numeroWhatsApp = '5582987165196'; // Exemplo: 55 = Brasil, 82 = DDD, 999261614 = número
+
+    // 2. Crie a mensagem (opcional, mas muito útil)
+    const mensagemPadrao = 'Olá, gostaria de fazer um pedido!';
+
+    // 3. Monte o link completo para o WhatsApp
+    const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemPadrao)}`;
+
+    // 4. Abra o link em uma nova aba
+    window.open(linkWhatsApp, '_blank');
+
+    })
+
+
     /* MENU CATEGORIAS */
     
-    const menuCategorias = document.getElementById('menu-categorias')
+    const botoesMenu = document.querySelectorAll('.botoesCategorias')
 
-    // Ouvinte de Eventos
-    menuCategorias.addEventListener('change', (event) => {
+      botoesMenu.forEach(function (botaoSelecionado) {
+        botaoSelecionado.addEventListener('click', function() {
 
+          const categoriaID = botaoSelecionado.dataset.categoria
 
-      const categoriaID = event.target.value;
-
-      const opcaoSelecionada = event.target.options[event.target.selectedIndex];
-      const textoSelecionado = opcaoSelecionada.text
-
-      menuCategorias.style.width = 'auto'
-
-      // Se o valor não estiver vazio, rola a página
-      if (categoriaID) {
+                // Se o valor não estiver vazio, rola a página
+        if (categoriaID) {
         //Encontra a seção correspondente pelo ID
         const secao = document.getElementById(categoriaID)
 
@@ -1595,7 +1699,13 @@ btnFinalizarPedidoWhatsApp.addEventListener('click', function () {
         }
       }
 
+        })
 
-    });
+      })
+
+
+
+
+
 
     
